@@ -33,11 +33,25 @@ Multi-agent frameworks, MCP servers, and developer tooling.
 
 <br>
 
+**Agent tooling and planning**
+- **[godaudits](https://github.com/hannsxpeter/godaudits)**: audit a codebase end to end into a scored, agent-executable report.
+- **[godplans](https://github.com/hannsxpeter/godplans)**: emit a complete, audit-proof master plan before any code.
+- **[arc-ready](https://github.com/hannsxpeter/arc-ready)** and **[ready-suite](https://github.com/hannsxpeter/ready-suite)**: idea to launch as composable agent skills.
+- **[engram](https://github.com/hannsxpeter/engram)**: self-hosted agent memory with local embeddings.
+
+**AI-text authenticity**
+- **[humanizer](https://github.com/hannsxpeter/humanizer)**: de-slop AI prose and rewrite it in a writer's voice.
+- **[authenticity-check](https://github.com/hannsxpeter/authenticity-check)**: score how authentically text reads as a real human author's work.
+- **[voiceprint](https://github.com/hannsxpeter/voiceprint)**: a one-pass prose-authenticity orchestrator over the two.
+
+**MCP and infrastructure**
 - **[Sumac](https://github.com/hannsxpeter/sumac)**: one Rust binary bridging skills, MCP, and APIs.
 - **[OpenRustClaw](https://github.com/hannsxpeter/OpenRustClaw)**: a self-hosted, Rust-first assistant runtime.
-- **[arc-ready](https://github.com/hannsxpeter/arc-ready)**: idea to launch as composable agent skills.
-- **[Sveltry](https://github.com/hannsxpeter/sveltry)**: a self-hosted, Sentry-compatible error tracker.
+
+**Products and fun**
 - **[Clario](https://github.com/hannsxpeter/clario)**: AI marketing that writes in a brand's own voice and scores it for authenticity.
+- **[Sveltry](https://github.com/hannsxpeter/sveltry)**: a self-hosted, Sentry-compatible error tracker.
+- **[caveman](https://github.com/hannsxpeter/caveman)**: a Claude Code skill that talks like caveman to cut tokens.
 
 </details>
 
@@ -56,6 +70,12 @@ Multi-agent frameworks, MCP servers, and developer tooling.
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
 ![MCP](https://img.shields.io/badge/Model_Context_Protocol-6E56CF?style=flat-square)
+
+**Daily drivers**
+
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![Codex](https://img.shields.io/badge/Codex-111111?style=flat-square&logo=openai&logoColor=white)
+![Cursor](https://img.shields.io/badge/Cursor-111111?style=flat-square&logo=cursor&logoColor=white)
 
 </div>
 
