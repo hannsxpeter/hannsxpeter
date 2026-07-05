@@ -79,13 +79,6 @@ Multi-agent frameworks, MCP servers, and developer tooling.
 
 ## Background
 
-20 years in enterprise systems, data, and analytics (Senior IT Advisor, ServiceNow ITOM, public sector). Bilingual (EN / FR). Now building AI full-time.
+20 years in enterprise systems, data, and analytics. Now building AI full-time.
 
 **What I care about:** evidence over vibes, gates over hope, tools that leave a trail you can check, and software people can own and self-host, not just rent.
-
-<div align="center">
-<br>
-
-![Hanns Peter's GitHub stats](https://github-readme-stats.vercel.app/api?username=hannsxpeter&show_icons=true&hide_border=true&hide_title=true&count_private=true&card_width=460)
-
-</div>
