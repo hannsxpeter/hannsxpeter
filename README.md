@@ -37,7 +37,6 @@ Multi-agent frameworks, MCP servers, and developer tooling.
 - **[godaudits](https://github.com/hannsxpeter/godaudits)**: audit a codebase end to end into a scored, agent-executable report.
 - **[godplans](https://github.com/hannsxpeter/godplans)**: emit a complete, audit-proof master plan before any code.
 - **[arc-ready](https://github.com/hannsxpeter/arc-ready)** and **[ready-suite](https://github.com/hannsxpeter/ready-suite)**: idea to launch as composable agent skills.
-- **[engram](https://github.com/hannsxpeter/engram)**: self-hosted agent memory with local embeddings.
 
 **AI-text authenticity**
 - **[humanizer](https://github.com/hannsxpeter/humanizer)**: de-slop AI prose and rewrite it in a writer's voice.
@@ -48,10 +47,9 @@ Multi-agent frameworks, MCP servers, and developer tooling.
 - **[Sumac](https://github.com/hannsxpeter/sumac)**: one Rust binary bridging skills, MCP, and APIs.
 - **[OpenRustClaw](https://github.com/hannsxpeter/OpenRustClaw)**: a self-hosted, Rust-first assistant runtime.
 
-**Products and fun**
+**Products**
 - **[Clario](https://github.com/hannsxpeter/clario)**: AI marketing that writes in a brand's own voice and scores it for authenticity.
 - **[Sveltry](https://github.com/hannsxpeter/sveltry)**: a self-hosted, Sentry-compatible error tracker.
-- **[caveman](https://github.com/hannsxpeter/caveman)**: a Claude Code skill that talks like caveman to cut tokens.
 
 </details>
 
