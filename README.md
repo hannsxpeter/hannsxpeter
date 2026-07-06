@@ -7,6 +7,8 @@
 Multi-agent frameworks, MCP servers, and developer tooling.
 **The proof is shipped, not theoretical.**
 
+[![Website](https://img.shields.io/badge/hannsxpeter.com-0E1217?style=flat-square&logo=googlechrome&logoColor=E8A33D)](https://hannsxpeter.com)
+&nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-hannsxpeter-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/hannsxpeter)
 &nbsp;
 [![X](https://img.shields.io/badge/X-hannsxpeter-111111?style=flat-square&logo=x&logoColor=white)](https://x.com/hannsxpeter)
