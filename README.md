@@ -4,10 +4,10 @@
 
 ### AI engineer building the infrastructure around AI agents
 
-Multi-agent frameworks, MCP servers, and developer tooling.
+Multi-agent frameworks, developer tooling, and AI infrastructure.
 **The proof is shipped, not theoretical.**
 
-[![Website](https://img.shields.io/badge/hannsxpeter.com-0E1217?style=flat-square&logo=googlechrome&logoColor=E8A33D)](https://hannsxpeter.com)
+[![Website](https://img.shields.io/badge/hannsxpeter.com-0E1217?style=flat-square&logo=googlechrome&logoColor=17A87A)](https://hannsxpeter.com)
 &nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-hannsxpeter-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/hannsxpeter)
 &nbsp;
@@ -19,13 +19,15 @@ Multi-agent frameworks, MCP servers, and developer tooling.
 
 > The bet: natural language is becoming the interface for building software. I build the parts that make that reliable, and that people can own rather than rent.
 
+**Currently:** Co-Founder and Chief Technology and AI Officer at **[Keyvra](https://keyvra.io)**, the software that runs shared space: buildings, bookings, access, and activity in one place.
+
 ## What I build
 
 | Project | What it is |
 | --- | --- |
 | **[Godpowers](https://github.com/hannsxpeter/godpowers)** | Turns an AI coding tool into a disciplined engineering team: specialist subagents, verification gates, an on-disk audit trail, and an autonomous loop mode. Published on npm. |
+| **[Auditor suite](https://github.com/hannsxpeter/auditor-suite)** | Seven read-only audit skills in one repo, one install: code, security, database, LLM, SEO, UI, and UX. Each scores a codebase end to end and writes a prioritized report. Installs as a Claude Code plugin. |
 | **[Mythify](https://github.com/hannsxpeter/mythify)** | An evidence protocol for AI coding agents, built around plan, act, verify. Zero-dependency CLI plus an MCP server. |
-| **Auditor suite** | Read-only skills that score a codebase and return a prioritized, evidence-backed report: [code](https://github.com/hannsxpeter/codeauditor), [db](https://github.com/hannsxpeter/dbauditor), [security](https://github.com/hannsxpeter/secauditor), [seo](https://github.com/hannsxpeter/seoauditor), [ui](https://github.com/hannsxpeter/uiauditor), [ux](https://github.com/hannsxpeter/uxauditor), [llm](https://github.com/hannsxpeter/llmauditor). |
 | **[codedna](https://github.com/hannsxpeter/codedna)** | Fingerprints a codebase's style so AI contributions read like the original author. |
 | **[Pillars](https://github.com/hannsxpeter/pillars)** | Keeps coding agents aligned to a project's conventions, decisions, and constraints. |
 | **[Scriveno](https://github.com/hannsxpeter/scriveno)** | A spec-driven writing, publishing, and translation pipeline for AI coding agents. |
@@ -36,8 +38,8 @@ Multi-agent frameworks, MCP servers, and developer tooling.
 <br>
 
 **Agent tooling and planning**
-- **[godaudits](https://github.com/hannsxpeter/godaudits)**: audit a codebase end to end into a scored, agent-executable report.
 - **[godplans](https://github.com/hannsxpeter/godplans)**: emit a complete, audit-proof master plan before any code.
+- **[godaudits](https://github.com/hannsxpeter/godaudits)**: audit a codebase end to end into a scored, agent-executable report.
 - **[arc-ready](https://github.com/hannsxpeter/arc-ready)** and **[ready-suite](https://github.com/hannsxpeter/ready-suite)**: idea to launch as composable agent skills.
 
 **AI-text authenticity**
@@ -45,7 +47,7 @@ Multi-agent frameworks, MCP servers, and developer tooling.
 - **[authenticity-check](https://github.com/hannsxpeter/authenticity-check)**: score how authentically text reads as a real human author's work.
 - **[voiceprint](https://github.com/hannsxpeter/voiceprint)**: a one-pass prose-authenticity orchestrator over the two.
 
-**MCP and infrastructure**
+**Infrastructure**
 - **[Sumac](https://github.com/hannsxpeter/sumac)**: one Rust binary bridging skills, MCP, and APIs.
 - **[OpenRustClaw](https://github.com/hannsxpeter/OpenRustClaw)**: a self-hosted, Rust-first assistant runtime.
 
