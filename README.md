@@ -19,7 +19,7 @@ Multi-agent frameworks, developer tooling, and AI infrastructure.
 
 > The bet: natural language is becoming the interface for building software. I build the parts that make that reliable, and that people can own rather than rent.
 
-**Currently:** Co-Founder and Chief Technology and AI Officer at **[Keyvra](https://keyvra.io)**, the software that runs shared space: buildings, bookings, access, and activity in one place.
+**Currently:** Co-Founder and Chief Technology and AI Officer at **[Keyvra](https://keyvra.io)**, the software that runs shared space: buildings, bookings, access, and activity in one place. Founder and Principal Consultant at **[Sharetact](https://sharetact.co)**, my technology consultancy: AI-forward automation and systems for government and growing business.
 
 ## What I build
 
