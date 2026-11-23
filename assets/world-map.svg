@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" role="img" aria-labelledby="t d">
+  <title id="t">@hxp-tools world map</title>
+  <desc id="d">Arcade world select. Eight families: God, Proof, DNA, Audit, Voice, Ink, Brief, Arc. Fourteen packages across the map.</desc>
+  <style>
+    .sans{font-family:"Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif}
+    .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+  </style>
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#1A2420"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="720" fill="#0E1217"/>
+  <rect width="1200" height="720" fill="url(#dots)"/>
+  <rect x="0.5" y="0.5" width="1199" height="719" rx="10" fill="none" stroke="#24302A"/>
+
+  <path d="M1 44H1199V11a10 10 0 0 0-10-10H11A10 10 0 0 0 1 11Z" fill="#151B18"/>
+  <line x1="1" y1="44" x2="1199" y2="44" stroke="#24302A"/>
+  <text x="32" y="28" class="mono" font-size="13" font-weight="700" fill="#E8B84A" letter-spacing="1.5">WORLD SELECT</text>
+  <text x="600" y="28" class="mono" font-size="13" font-weight="700" fill="#17A87A" text-anchor="middle" letter-spacing="1.5">8 FAMILIES / 14 PACKAGES</text>
+  <text x="1168" y="28" class="mono" font-size="13" fill="#7F8BA3" text-anchor="end" letter-spacing="1.5">@HXP-TOOLS</text>
+
+  <!-- W1 GOD -->
+  <g transform="translate(28 68)">
+    <rect width="280" height="200" rx="8" fill="#12181A" stroke="#17A87A" stroke-width="2"/>
+    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W1</text>
+    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#17A87A" letter-spacing="2">GOD</text>
+    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Discipline stack</text>
+    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">godpowers</text>
+    <text x="16" y="106" class="mono" font-size="12" fill="#A8B0C0">godplans</text>
+    <text x="16" y="128" class="mono" font-size="12" fill="#A8B0C0">goddesign</text>
+    <text x="16" y="150" class="mono" font-size="12" fill="#A8B0C0">godaudits</text>
+    <text x="16" y="180" class="mono" font-size="11" fill="#7F8BA3">plan / design / build / audit</text>
+  </g>
+
+  <!-- W2 PROOF -->
+  <g transform="translate(324 68)">
+    <rect width="280" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
+    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W2</text>
+    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#3DF58A" letter-spacing="2">PROOF</text>
+    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Prove done</text>
+    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">mythify</text>
+    <text x="16" y="120" class="sans" font-size="13" fill="#7F8BA3">Plans close only on</text>
+    <text x="16" y="140" class="sans" font-size="13" fill="#7F8BA3">a real exit 0.</text>
+    <text x="16" y="180" class="mono" font-size="11" fill="#7F8BA3">zero deps / any model</text>
+  </g>
+
+  <!-- W3 DNA -->
+  <g transform="translate(620 68)">
+    <rect width="280" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
+    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W3</text>
+    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#4CC9F0" letter-spacing="2">DNA</text>
+    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Author match</text>
+    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">codedna</text>
+    <text x="16" y="106" class="mono" font-size="12" fill="#A8B0C0">docdna</text>
+    <text x="16" y="140" class="sans" font-size="13" fill="#7F8BA3">Fingerprint code and</text>
+    <text x="16" y="160" class="sans" font-size="13" fill="#7F8BA3">docs the repo owes.</text>
+  </g>
+
+  <!-- W4 AUDIT -->
+  <g transform="translate(916 68)">
+    <rect width="256" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
+    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W4</text>
+    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#FF7A59" letter-spacing="2">AUDIT</text>
+    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Scored passes</text>
+    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">auditor-suite</text>
+    <text x="16" y="120" class="sans" font-size="13" fill="#7F8BA3">Eight read-only</text>
+    <text x="16" y="140" class="sans" font-size="13" fill="#7F8BA3">domain audits.</text>
+    <text x="16" y="180" class="mono" font-size="11" fill="#7F8BA3">reports agents can act on</text>
+  </g>
+
+  <!-- W5 VOICE -->
+  <g transform="translate(28 292)">
+    <rect width="280" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
+    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W5</text>
+    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#F72585" letter-spacing="2">VOICE</text>
+    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Sound like you</text>
+    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">authenticity-check</text>
+    <text x="16" y="106" class="mono" font-size="12" fill="#A8B0C0">humanizer</text>
+    <text x="16" y="128" class="mono" font-size="12" fill="#A8B0C0">voiceprint</text>
+    <text x="16" y="168" class="sans" font-size="13" fill="#7F8BA3">Diagnose, clean, rewrite.</text>
+    <text x="16" y="188" class="mono" font-size="11" fill="#7F8BA3">never invent facts</text>
+  </g>
+
+  <!-- W6 INK -->
+  <g transform="translate(324 292)">
+    <rect width="280" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
+    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W6</text>
+    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#C4B59A" letter-spacing="2">INK</text>
+    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Blank to book</text>
+    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">scriveno</text>
+    <text x="16" y="120" class="sans" font-size="13" fill="#7F8BA3">Spec-driven writing,</text>
+    <text x="16" y="140" class="sans" font-size="13" fill="#7F8BA3">publishing, translation.</text>
+    <text x="16" y="180" class="mono" font-size="11" fill="#7F8BA3">creative agents pipeline</text>
+  </g>
+
+  <!-- W7 BRIEF -->
+  <g transform="translate(620 292)">
+    <rect width="280" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
+    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W7</text>
+    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">BRIEF</text>
+    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Start with context</text>
+    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">pillars</text>
+    <text x="16" y="120" class="sans" font-size="13" fill="#7F8BA3">Open standard for</text>
+    <text x="16" y="140" class="sans" font-size="13" fill="#7F8BA3">project briefings.</text>
+    <text x="16" y="180" class="mono" font-size="11" fill="#7F8BA3">built on AGENTS.md</text>
+  </g>
+
+  <!-- W8 ARC -->
+  <g transform="translate(916 292)">
+    <rect width="256" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
+    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W8</text>
+    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#8C86B8" letter-spacing="2">ARC</text>
+    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Idea to launch</text>
+    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">ready-suite</text>
+    <text x="16" y="120" class="sans" font-size="13" fill="#7F8BA3">Eleven composable</text>
+    <text x="16" y="140" class="sans" font-size="13" fill="#7F8BA3">skills, one arc.</text>
+    <text x="16" y="180" class="mono" font-size="11" fill="#7F8BA3">artifacts are the contract</text>
+  </g>
+
+  <!-- Footer status bar -->
+  <rect x="28" y="520" width="1144" height="168" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
+  <text x="52" y="556" class="mono" font-size="13" font-weight="700" fill="#E8B84A" letter-spacing="2">HOW TO PLAY</text>
+  <text x="52" y="590" class="sans" font-size="16" fill="#E8E2D6">1. Brief the agent (Pillars)  2. Plan and lock design (God)  3. Prove every claim (Mythify)</text>
+  <text x="52" y="620" class="sans" font-size="16" fill="#A8B0C0">4. Match the author's DNA  5. Audit what shipped  6. Keep the voice human  7. Launch the arc</text>
+  <text x="52" y="658" class="mono" font-size="13" font-weight="700" fill="#17A87A" letter-spacing="1">npx @hxp-tools/&lt;package&gt;   ·   github.com/hannsxpeter   ·   npmjs.com/org/hxp-tools</text>
+</svg>
