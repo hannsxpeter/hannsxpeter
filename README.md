@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.svg" alt="Arcade title screen: HANNS PETER. AI engineer building the infrastructure around AI agents. 14 packages under @hxp-tools." width="100%">
+  <img src="assets/hero.svg" alt="Arcade title screen: HANNS PETER. AI engineer building agentic systems, MCP servers, and dev infrastructure. Creator of Godpowers. Ottawa, Canada." width="100%">
 </p>
 
 <p align="center">
@@ -9,9 +9,9 @@
   <a href="https://x.com/hannsxpeter"><img alt="X" src="https://img.shields.io/badge/X-hannsxpeter-111111?style=flat-square&logo=x&logoColor=white"></a>
 </p>
 
-<h3 align="center">The proof is shipped, not theoretical.</h3>
+<h3 align="center">AI engineer building agentic systems, MCP servers, and dev infrastructure.</h3>
 
-<p align="center"><em>Natural language is becoming the interface for building software. I build the parts that make that reliable, and that people can own rather than rent.</em></p>
+<p align="center"><em>Creator of Godpowers. TypeScript / Python / Rust. Ottawa, Canada.</em></p>
 
 **Currently:** Founder and Principal Consultant at **[Sharetact](https://sharetact.co)**. AI-forward automation and systems for government and growing business.
 
