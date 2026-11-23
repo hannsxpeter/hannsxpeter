@@ -1,116 +1,110 @@
 <p align="center">
-  <img src="assets/hero.svg" alt="Collector edition title card: Hanns Peter. AI engineer building agentic systems, MCP servers, and dev infrastructure. Creator of Godpowers, Scriveno, Mythify. TypeScript, Python, Rust, Bun, Convex. Ottawa, Canada." width="100%">
+  <img src="assets/header.svg" alt="Hanns Peter. AI engineer building agentic systems, MCP servers, and developer infrastructure. Creator of Godpowers, Mythify, and Scriveno. 20+ years in enterprise systems, data, and AI. Ottawa, Canada." width="100%">
 </p>
 
 <p align="center">
-  <a href="https://hannsxpeter.com"><img alt="Website" src="https://img.shields.io/badge/hannsxpeter.com-111417?style=flat-square&logo=googlechrome&logoColor=17A87A"></a>
-  <a href="https://www.npmjs.com/org/hxp-tools"><img alt="npm org" src="https://img.shields.io/badge/@hxp--tools-14%20packages-17A87A?style=flat-square&logo=npm&logoColor=111417"></a>
-  <a href="https://sharetact.co"><img alt="Sharetact" src="https://img.shields.io/badge/Sharetact-Founder-D8AE5E?style=flat-square"></a>
+  <a href="https://hannsxpeter.com"><img alt="Website" src="https://img.shields.io/badge/hannsxpeter.com-0D1117?style=flat-square&logo=googlechrome&logoColor=17A87A"></a>
   <a href="https://linkedin.com/in/hannsxpeter"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-hannsxpeter-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
-  <a href="https://x.com/hannsxpeter"><img alt="X" src="https://img.shields.io/badge/X-hannsxpeter-181C21?style=flat-square&logo=x&logoColor=white"></a>
+  <a href="https://www.npmjs.com/org/hxp-tools"><img alt="npm" src="https://img.shields.io/badge/npm-@hxp--tools%20(14)-17A87A?style=flat-square&logo=npm&logoColor=0D1117"></a>
+  <a href="https://sharetact.co"><img alt="Sharetact" src="https://img.shields.io/badge/Sharetact-Founder-161D27?style=flat-square"></a>
+  <a href="https://x.com/hannsxpeter"><img alt="X" src="https://img.shields.io/badge/X-hannsxpeter-161D27?style=flat-square&logo=x&logoColor=white"></a>
 </p>
 
-<h3 align="center">AI engineer building agentic systems, MCP servers, and dev infrastructure.</h3>
+## Overview
 
-<p align="center"><em>Creator of Godpowers. Scriveno. Mythify. Stack: TypeScript / Python / Rust / Bun Convex. Ottawa, Canada.</em></p>
+AI engineer building **agentic systems, MCP servers, and developer infrastructure** in TypeScript, Rust, and Python. Creator of **[Godpowers](https://github.com/hannsxpeter/godpowers)**, **[Mythify](https://github.com/hannsxpeter/mythify)**, and **[Scriveno](https://github.com/hannsxpeter/scriveno)**.
 
-> **Active quest:** Founder and Principal Consultant at **[Sharetact](https://sharetact.co)**. AI-forward automation and systems for government and growing business.
+- **Currently:** Founder and Principal Consultant at **[Sharetact](https://sharetact.co)**, delivering AI-forward automation and production systems for government and growing businesses.
+- **Background:** 20 years in enterprise systems, data, and analytics, now building AI infrastructure full-time from Ottawa, Canada.
+- **Engineering focus:** Evidence over vibes, verification gates over hope, deterministic audit trails on disk, and self-hosted software teams can own rather than rent.
 
 ---
 
-## Overworld map
+## Selected work
 
-Fourteen packages on [`@hxp-tools`](https://www.npmjs.com/org/hxp-tools), organized as an eight-world campaign from project briefing to production launch, plus a standalone writing campaign.
+| Project | Stack | What it solves | Links |
+| :--- | :--- | :--- | :--- |
+| **[Godpowers](https://github.com/hannsxpeter/godpowers)** | TypeScript, Hooks, MCP | Keeps project memory on disk, enforces verification gates via hooks, and refuses unverified completion across AI coding tools. | [![npm](https://img.shields.io/npm/v/@hxp-tools/godpowers?style=flat-square&color=17A87A)](https://www.npmjs.com/package/@hxp-tools/godpowers) |
+| **[Mythify](https://github.com/hannsxpeter/mythify)** | Python, CLI, MCP | Zero-dependency evidence protocol (CLI and MCP server) where plans close only on a passing check. Works with any model. | [![npm](https://img.shields.io/npm/v/@hxp-tools/mythify?style=flat-square&color=17A87A)](https://www.npmjs.com/package/@hxp-tools/mythify) |
+| **[Sumac](https://github.com/hannsxpeter/sumac)** | Rust, MCP, CLI | Single Rust binary bridging skills, MCP servers, and APIs: run any skill as an MCP server, any MCP server as a CLI, and any API from the terminal. | [GitHub](https://github.com/hannsxpeter/sumac) |
+| **[OpenRustClaw](https://github.com/hannsxpeter/OpenRustClaw)** | Rust | Self-hosted, Rust-first assistant platform with a trust-first control plane, durable operator surfaces, and enterprise governance lanes. | [GitHub](https://github.com/hannsxpeter/OpenRustClaw) |
+| **[open-scion](https://github.com/hannsxpeter/open-scion)** | Rust | Server-centric version control for agent-heavy monorepos in Rust, independently implementing concepts from Anthropic's source control design. | [GitHub](https://github.com/hannsxpeter/open-scion) |
+| **[Scriveno](https://github.com/hannsxpeter/scriveno)** | JavaScript, Agents | Spec-driven writing, publishing, and translation pipeline for AI coding agents, from blank page to published book. | [![npm](https://img.shields.io/npm/v/@hxp-tools/scriveno?style=flat-square&color=17A87A)](https://www.npmjs.com/package/@hxp-tools/scriveno) |
+| **[Sveltry](https://github.com/hannsxpeter/sveltry)** | TypeScript, Bun, SvelteKit, Convex | Reactive, self-hosted, Sentry-compatible error tracker built on Bun, SvelteKit, self-hosted Convex, PostgreSQL, and Better Auth. | [GitHub](https://github.com/hannsxpeter/sveltry) |
+
+---
+
+## Agentic engineering ecosystem (`@hxp-tools`)
+
+Fourteen published packages on [`@hxp-tools`](https://www.npmjs.com/org/hxp-tools), designed to compose across the full AI-assisted software delivery lifecycle.
 
 <p align="center">
-  <img src="assets/world-map.svg" alt="Illustrated overworld campaign map for 14 @hxp-tools packages across 8 worlds: W7 Brief, W1 God, W2 Proof, W3 DNA, W4 Audit, W5 Voice, W8 Arc, and side campaign W6 Ink." width="100%">
+  <img src="assets/architecture.svg" alt="Systems architecture diagram of the @hxp-tools ecosystem across four stages: Context and Spec (pillars, godplans, goddesign), State and Proof (godpowers, mythify), Quality and Audit (codedna, docdna, godaudits, auditor-suite), and Ship and Voice (ready-suite, authenticity-check, humanizer, voiceprint), plus parallel Rust systems (sumac, OpenRustClaw, open-scion) and publishing (scriveno)." width="100%">
 </p>
 
-## Stage select
-
-| Stage | World | Package | Role | Version |
-| :--- | :--- | :--- | :--- | :--- |
-| `1` | **W7 · Brief** | **[@hxp-tools/pillars](https://www.npmjs.com/package/@hxp-tools/pillars)** | Your agent starts blank. Give it a briefing. Open standard on `AGENTS.md`. | [![npm](https://img.shields.io/npm/v/@hxp-tools/pillars?style=flat-square&color=D8AE5E)](https://www.npmjs.com/package/@hxp-tools/pillars) |
-| `2` | **W1 · God** | **[@hxp-tools/godpowers](https://www.npmjs.com/package/@hxp-tools/godpowers)** | Durable project state, evidence-backed "done", and gates enforced by hooks | [![npm](https://img.shields.io/npm/v/@hxp-tools/godpowers?style=flat-square&color=17A87A)](https://www.npmjs.com/package/@hxp-tools/godpowers) |
-| `2` | **W1 · God** | **[@hxp-tools/godplans](https://www.npmjs.com/package/@hxp-tools/godplans)** | Ask, decide, grade, clear the gate before any code | [![npm](https://img.shields.io/npm/v/@hxp-tools/godplans?style=flat-square&color=17A87A)](https://www.npmjs.com/package/@hxp-tools/godplans) |
-| `2` | **W1 · God** | **[@hxp-tools/goddesign](https://www.npmjs.com/package/@hxp-tools/goddesign)** | Draw one direction from a deck, lock it, clear a measured gate | [![npm](https://img.shields.io/npm/v/@hxp-tools/goddesign?style=flat-square&color=17A87A)](https://www.npmjs.com/package/@hxp-tools/goddesign) |
-| `2` | **W1 · God** | **[@hxp-tools/godaudits](https://www.npmjs.com/package/@hxp-tools/godaudits)** | Eighteen domains, 437 checks, scored reports, proof-gated change safety | [![npm](https://img.shields.io/npm/v/@hxp-tools/godaudits?style=flat-square&color=17A87A)](https://www.npmjs.com/package/@hxp-tools/godaudits) |
-| `3` | **W2 · Proof** | **[@hxp-tools/mythify](https://www.npmjs.com/package/@hxp-tools/mythify)** | Prove done. Plans close only on a passing check. Any model, zero dependencies. | [![npm](https://img.shields.io/npm/v/@hxp-tools/mythify?style=flat-square&color=6BC799)](https://www.npmjs.com/package/@hxp-tools/mythify) |
-| `4` | **W3 · DNA** | **[@hxp-tools/codedna](https://www.npmjs.com/package/@hxp-tools/codedna)** | Fingerprint a codebase so AI contributions match the author | [![npm](https://img.shields.io/npm/v/@hxp-tools/codedna?style=flat-square&color=6EA8CE)](https://www.npmjs.com/package/@hxp-tools/codedna) |
-| `4` | **W3 · DNA** | **[@hxp-tools/docdna](https://www.npmjs.com/package/@hxp-tools/docdna)** | Decide which documents a codebase owes; write what the code can prove | [![npm](https://img.shields.io/npm/v/@hxp-tools/docdna?style=flat-square&color=6EA8CE)](https://www.npmjs.com/package/@hxp-tools/docdna) |
-| `5` | **W4 · Audit** | **[@hxp-tools/auditor-suite](https://www.npmjs.com/package/@hxp-tools/auditor-suite)** | Eight read-only audits. One domain each. Scored reports agents can act on. | [![npm](https://img.shields.io/npm/v/@hxp-tools/auditor-suite?style=flat-square&color=D98066)](https://www.npmjs.com/package/@hxp-tools/auditor-suite) |
-| `6` | **W5 · Voice** | **[@hxp-tools/authenticity-check](https://www.npmjs.com/package/@hxp-tools/authenticity-check)** | Score text and flag AI-sounding spans. Never rewrites. | [![npm](https://img.shields.io/npm/v/@hxp-tools/authenticity-check?style=flat-square&color=CE7B97)](https://www.npmjs.com/package/@hxp-tools/authenticity-check) |
-| `6` | **W5 · Voice** | **[@hxp-tools/humanizer](https://www.npmjs.com/package/@hxp-tools/humanizer)** | Strip the tells. Keep the facts. Sound like you. | [![npm](https://img.shields.io/npm/v/@hxp-tools/humanizer?style=flat-square&color=CE7B97)](https://www.npmjs.com/package/@hxp-tools/humanizer) |
-| `6` | **W5 · Voice** | **[@hxp-tools/voiceprint](https://www.npmjs.com/package/@hxp-tools/voiceprint)** | One-pass prose authenticity: diagnose, clean, rewrite once, report | [![npm](https://img.shields.io/npm/v/@hxp-tools/voiceprint?style=flat-square&color=CE7B97)](https://www.npmjs.com/package/@hxp-tools/voiceprint) |
-| `7` | **W8 · Arc** | **[@hxp-tools/ready-suite](https://www.npmjs.com/package/@hxp-tools/ready-suite)** | Eleven composable skills from idea to launch. Artifacts are the contract. | [![npm](https://img.shields.io/npm/v/@hxp-tools/ready-suite?style=flat-square&color=9B95CE)](https://www.npmjs.com/package/@hxp-tools/ready-suite) |
-| `SIDE` | **W6 · Ink** | **[@hxp-tools/scriveno](https://www.npmjs.com/package/@hxp-tools/scriveno)** | Spec-driven creative writing, publishing, and translation. Blank page to published book. | [![npm](https://img.shields.io/npm/v/@hxp-tools/scriveno?style=flat-square&color=CBB488)](https://www.npmjs.com/package/@hxp-tools/scriveno) |
+| Stage | Package | Purpose | Version |
+| :--- | :--- | :--- | :--- |
+| Context & Spec | **[@hxp-tools/pillars](https://github.com/hannsxpeter/pillars)** | Open standard on `AGENTS.md` so coding agents start with a structured project briefing. | [![npm](https://img.shields.io/npm/v/@hxp-tools/pillars?style=flat-square&color=242D38)](https://www.npmjs.com/package/@hxp-tools/pillars) |
+| Context & Spec | **[@hxp-tools/godplans](https://github.com/hannsxpeter/godplans)** | Structured questioning, decision locking, and pre-code plan grading before implementation starts. | [![npm](https://img.shields.io/npm/v/@hxp-tools/godplans?style=flat-square&color=242D38)](https://www.npmjs.com/package/@hxp-tools/godplans) |
+| Context & Spec | **[@hxp-tools/goddesign](https://github.com/hannsxpeter/goddesigns)** | Deterministic UI direction lock and measured visual verification gate. | [![npm](https://img.shields.io/npm/v/@hxp-tools/goddesign?style=flat-square&color=242D38)](https://www.npmjs.com/package/@hxp-tools/goddesign) |
+| State & Proof | **[@hxp-tools/godpowers](https://github.com/hannsxpeter/godpowers)** | Durable project state on disk, evidence-backed completion, and hook-enforced gates. | [![npm](https://img.shields.io/npm/v/@hxp-tools/godpowers?style=flat-square&color=17A87A)](https://www.npmjs.com/package/@hxp-tools/godpowers) |
+| State & Proof | **[@hxp-tools/mythify](https://github.com/hannsxpeter/mythify)** | Zero-dependency evidence protocol (CLI and MCP). Plans close only on exit 0. | [![npm](https://img.shields.io/npm/v/@hxp-tools/mythify?style=flat-square&color=17A87A)](https://www.npmjs.com/package/@hxp-tools/mythify) |
+| Quality & Audit | **[@hxp-tools/codedna](https://github.com/hannsxpeter/codedna)** | Fingerprints a codebase's conventions so AI contributions match the author's style. | [![npm](https://img.shields.io/npm/v/@hxp-tools/codedna?style=flat-square&color=242D38)](https://www.npmjs.com/package/@hxp-tools/codedna) |
+| Quality & Audit | **[@hxp-tools/docdna](https://github.com/hannsxpeter/docdna)** | Determines which docs a codebase owes, cites exclusions, and writes only what code can prove. | [![npm](https://img.shields.io/npm/v/@hxp-tools/docdna?style=flat-square&color=242D38)](https://www.npmjs.com/package/@hxp-tools/docdna) |
+| Quality & Audit | **[@hxp-tools/godaudits](https://github.com/hannsxpeter/godaudits)** | Eighteen engineering domains, 437 checks, scored reports, and proof-gated change safety. | [![npm](https://img.shields.io/npm/v/@hxp-tools/godaudits?style=flat-square&color=242D38)](https://www.npmjs.com/package/@hxp-tools/godaudits) |
+| Quality & Audit | **[@hxp-tools/auditor-suite](https://github.com/hannsxpeter/auditor-suite)** | Eight read-only domain audits returning prioritized, agent-executable reports. | [![npm](https://img.shields.io/npm/v/@hxp-tools/auditor-suite?style=flat-square&color=242D38)](https://www.npmjs.com/package/@hxp-tools/auditor-suite) |
+| Ship & Voice | **[@hxp-tools/ready-suite](https://github.com/hannsxpeter/ready-suite)** | Eleven composable skills from kickoff to production launch with artifact contracts. | [![npm](https://img.shields.io/npm/v/@hxp-tools/ready-suite?style=flat-square&color=242D38)](https://www.npmjs.com/package/@hxp-tools/ready-suite) |
+| Ship & Voice | **[@hxp-tools/authenticity-check](https://github.com/hannsxpeter/authenticity-check)** | Read-only prose diagnostic that scores text and flags AI-sounding spans without rewriting. | [![npm](https://img.shields.io/npm/v/@hxp-tools/authenticity-check?style=flat-square&color=242D38)](https://www.npmjs.com/package/@hxp-tools/authenticity-check) |
+| Ship & Voice | **[@hxp-tools/humanizer](https://github.com/hannsxpeter/humanizer)** | Strips AI writing tells while preserving facts and original voice. | [![npm](https://img.shields.io/npm/v/@hxp-tools/humanizer?style=flat-square&color=242D38)](https://www.npmjs.com/package/@hxp-tools/humanizer) |
+| Ship & Voice | **[@hxp-tools/voiceprint](https://github.com/hannsxpeter/voiceprint)** | One-pass prose authenticity pipeline: diagnose, clean, rewrite once, report. | [![npm](https://img.shields.io/npm/v/@hxp-tools/voiceprint?style=flat-square&color=242D38)](https://www.npmjs.com/package/@hxp-tools/voiceprint) |
+| Publishing | **[@hxp-tools/scriveno](https://github.com/hannsxpeter/scriveno)** | Spec-driven creative writing, publishing, and translation pipeline for books. | [![npm](https://img.shields.io/npm/v/@hxp-tools/scriveno?style=flat-square&color=242D38)](https://www.npmjs.com/package/@hxp-tools/scriveno) |
 
 <details>
-<summary><b>Quick-start commands (all 14 packages)</b></summary>
+<summary><b>Additional projects and quick-start CLI commands</b></summary>
+
+<br>
+
+**Additional public projects**
+- **[Clario](https://github.com/hannsxpeter/clario)**: AI marketing platform that sequences a brand's Company DNA and generates voice-matched, authenticity-scored creative (SvelteKit, Convex).
+- **[arc-ready](https://github.com/hannsxpeter/arc-ready)**: Single-skill idea-to-launch lifecycle with plain-Markdown artifacts and durable agent memory.
+
+**Quick-start commands (`npx`)**
 
 ```bash
-# 1. Brief (W7)
 npx @hxp-tools/pillars
-
-# 2. God family (W1)
 npx @hxp-tools/godpowers
 npx @hxp-tools/godplans
 npx @hxp-tools/goddesign
 npx @hxp-tools/godaudits
-
-# 3. Proof (W2)
 npx @hxp-tools/mythify
-
-# 4. DNA family (W3)
 npx @hxp-tools/codedna
 npx @hxp-tools/docdna
-
-# 5. Audit (W4)
 npx @hxp-tools/auditor-suite
-
-# 6. Voice family (W5)
 npx @hxp-tools/authenticity-check
 npx @hxp-tools/humanizer
 npx @hxp-tools/voiceprint
-
-# 7. Launch arc (W8)
 npx @hxp-tools/ready-suite
-
-# Side quest: Ink (W6)
 npx @hxp-tools/scriveno
 ```
 
 </details>
 
-<details>
-<summary><b>How to play: a typical run through the map</b></summary>
+---
 
-1. **Brief** with `pillars` so the agent stops guessing.
-2. **Plan and lock design** with `godplans` and `goddesign`; hold state with `godpowers`.
-3. **Prove** every claim with `mythify` (exit 0 or it did not happen).
-4. **Match** author style with `codedna` and `docdna`.
-5. **Audit** with `auditor-suite` or `godaudits`.
-6. **Keep the voice** with `authenticity-check`, `humanizer`, and `voiceprint` when prose ships.
-7. **Launch** the full idea-to-ship arc with `ready-suite`.
+## Technical stack
 
-`scriveno` is its own side campaign: books, not codebases.
-
-</details>
+| Area | Technologies |
+| :--- | :--- |
+| **Languages** | TypeScript, Rust, Python, Bash |
+| **AI & Agent Infrastructure** | Model Context Protocol (MCP), multi-agent orchestration, hook-enforced verification gates, Claude, Claude Code, Codex, Cursor |
+| **Runtime, Web & Data** | Bun, SvelteKit, Astro, Convex, PostgreSQL, Docker (self-hosted infrastructure) |
 
 ---
 
-## Loadout
-
-<p align="center">
-  <img src="assets/loadout.svg" alt="Character sheet and equipment loadout. Principles and 20 years experience. Languages: TypeScript, Rust, Python, Bash. Runtime: Bun, SvelteKit, Astro, Convex, Docker. Daily drivers: Claude, MCP, Claude Code, Codex, Cursor." width="100%">
-</p>
-
-**Background:** 20 years in enterprise systems, data, and analytics. Now building AI full-time.
-
-**What I care about:** evidence over vibes, gates over hope, tools that leave a trail you can check, and software people can own and self-host, not just rent.
-
 <p align="center">
   <a href="https://hannsxpeter.com">hannsxpeter.com</a>
+  ·
+  <a href="https://linkedin.com/in/hannsxpeter">LinkedIn</a>
   ·
   <a href="https://github.com/hannsxpeter">GitHub</a>
   ·

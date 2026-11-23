@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 374" width="1200" height="374" role="img" aria-labelledby="t d">
+  <title id="t">Agentic Engineering Systems Architecture</title>
+  <desc id="d">Systems architecture diagram showing how Hanns Peter's 14 open-source @hxp-tools packages and Rust infrastructure compose across four engineering lifecycle stages: Context and Planning, Execution and Verification, Consistency and Auditing, and Delivery and Prose QA, plus parallel Rust systems and publishing pipelines.</desc>
+  <style>
+    .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+    .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+  </style>
+
+  <!-- Canvas -->
+  <rect width="1200" height="374" rx="12" fill="#0D1117"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="372.5" rx="11.25" fill="none" stroke="#242D38" stroke-width="1.5"/>
+
+  <!-- Top Section Bar -->
+  <text x="32" y="32" class="mono" font-size="11" font-weight="700" fill="#3CC499" letter-spacing="1.6">SYSTEMS ARCHITECTURE  ·  @HXP-TOOLS ECOSYSTEM</text>
+  <text x="1168" y="32" class="mono" font-size="11" fill="#8B97A6" text-anchor="end">14 PUBLISHED NPM PACKAGES + RUST INFRASTRUCTURE</text>
+  <line x1="32" y1="46" x2="1168" y2="46" stroke="#1E2630" stroke-width="1"/>
+
+  <!-- Directional Connectors Between Columns -->
+  <g stroke="#242D38" stroke-width="1.5" fill="none">
+    <line x1="296" y1="158" x2="322" y2="158"/>
+    <line x1="586" y1="158" x2="612" y2="158"/>
+    <line x1="876" y1="158" x2="902" y2="158"/>
+  </g>
+  <g fill="#3CC499">
+    <polygon points="317,153 324,158 317,163"/>
+    <polygon points="607,153 614,158 607,163"/>
+    <polygon points="897,153 904,158 897,163"/>
+  </g>
+
+  <!-- COLUMN 1: Context & Specification (x=32, w=264, y=64, h=192) -->
+  <g transform="translate(32 64)">
+    <rect width="264" height="192" rx="10" fill="#131922" stroke="#242D38" stroke-width="1.2"/>
+    <text x="18" y="26" class="mono" font-size="10.5" font-weight="700" fill="#8B97A6" letter-spacing="1.2">01 · CONTEXT &amp; SPEC</text>
+    <text x="18" y="48" class="sans" font-size="15.5" font-weight="700" fill="#F3F6FA">Brief &amp; Plan Gates</text>
+    <text x="18" y="68" class="sans" font-size="12" fill="#8B97A6">Eliminate ambiguity before code.</text>
+    <rect x="18" y="84" width="228" height="24" rx="5" fill="#0D1117" stroke="#242D38" stroke-width="1"/><text x="28" y="100" class="mono" font-size="11" font-weight="600" fill="#F3F6FA">pillars</text><text x="236" y="99.5" class="sans" font-size="10.5" fill="#8B97A6" text-anchor="end">AGENTS.md spec</text>
+    <rect x="18" y="116" width="228" height="24" rx="5" fill="#0D1117" stroke="#242D38" stroke-width="1"/><text x="28" y="132" class="mono" font-size="11" font-weight="600" fill="#F3F6FA">godplans</text><text x="236" y="131.5" class="sans" font-size="10.5" fill="#8B97A6" text-anchor="end">pre-code gate</text>
+    <rect x="18" y="148" width="228" height="24" rx="5" fill="#0D1117" stroke="#242D38" stroke-width="1"/><text x="28" y="164" class="mono" font-size="11" font-weight="600" fill="#F3F6FA">goddesign</text><text x="236" y="163.5" class="sans" font-size="10.5" fill="#8B97A6" text-anchor="end">measured UI gate</text>
+  </g>
+
+  <!-- COLUMN 2: Execution & Verification (x=322, w=264, y=64, h=192) -->
+  <g transform="translate(322 64)">
+    <rect width="264" height="192" rx="10" fill="#10241F" stroke="#1D4A3D" stroke-width="1.4"/>
+    <text x="18" y="26" class="mono" font-size="10.5" font-weight="700" fill="#3CC499" letter-spacing="1.2">02 · STATE &amp; PROOF</text>
+    <text x="18" y="48" class="sans" font-size="15.5" font-weight="700" fill="#F3F6FA">Execution &amp; Evidence</text>
+    <text x="18" y="68" class="sans" font-size="12" fill="#D2DAE4">Durable state and exit-0 gates.</text>
+    <rect x="18" y="84" width="228" height="24" rx="5" fill="#10241F" stroke="#1D4A3D" stroke-width="1"/><text x="28" y="100" class="mono" font-size="11" font-weight="600" fill="#F3F6FA">godpowers</text><text x="236" y="99.5" class="sans" font-size="10.5" fill="#3CC499" text-anchor="end">hook-gated state</text>
+    <rect x="18" y="116" width="228" height="24" rx="5" fill="#10241F" stroke="#1D4A3D" stroke-width="1"/><text x="28" y="132" class="mono" font-size="11" font-weight="600" fill="#F3F6FA">mythify</text><text x="236" y="131.5" class="sans" font-size="10.5" fill="#3CC499" text-anchor="end">CLI + MCP proof</text>
+    <text x="18" y="168" class="mono" font-size="10.5" fill="#3CC499">Plans close only on passing checks</text>
+  </g>
+
+  <!-- COLUMN 3: Consistency & Auditing (x=612, w=264, y=64, h=192) -->
+  <g transform="translate(612 64)">
+    <rect width="264" height="192" rx="10" fill="#131922" stroke="#242D38" stroke-width="1.2"/>
+    <text x="18" y="26" class="mono" font-size="10.5" font-weight="700" fill="#8B97A6" letter-spacing="1.2">03 · QUALITY &amp; AUDIT</text>
+    <text x="18" y="48" class="sans" font-size="15.5" font-weight="700" fill="#F3F6FA">Style, Docs &amp; Audits</text>
+    <text x="18" y="68" class="sans" font-size="12" fill="#8B97A6">Match repo DNA and score risk.</text>
+    <rect x="18" y="84" width="110" height="24" rx="5" fill="#0D1117" stroke="#242D38" stroke-width="1"/><text x="28" y="100" class="mono" font-size="11" font-weight="600" fill="#F3F6FA">codedna</text>
+    <rect x="136" y="84" width="110" height="24" rx="5" fill="#0D1117" stroke="#242D38" stroke-width="1"/><text x="146" y="100" class="mono" font-size="11" font-weight="600" fill="#F3F6FA">docdna</text>
+    <rect x="18" y="116" width="228" height="24" rx="5" fill="#0D1117" stroke="#242D38" stroke-width="1"/><text x="28" y="132" class="mono" font-size="11" font-weight="600" fill="#F3F6FA">godaudits</text><text x="236" y="131.5" class="sans" font-size="10.5" fill="#8B97A6" text-anchor="end">18 domains / 437</text>
+    <rect x="18" y="148" width="228" height="24" rx="5" fill="#0D1117" stroke="#242D38" stroke-width="1"/><text x="28" y="164" class="mono" font-size="11" font-weight="600" fill="#F3F6FA">auditor-suite</text><text x="236" y="163.5" class="sans" font-size="10.5" fill="#8B97A6" text-anchor="end">8 read-only</text>
+  </g>
+
+  <!-- COLUMN 4: Delivery & Prose QA (x=902, w=266, y=64, h=192) -->
+  <g transform="translate(902 64)">
+    <rect width="266" height="192" rx="10" fill="#131922" stroke="#242D38" stroke-width="1.2"/>
+    <text x="18" y="26" class="mono" font-size="10.5" font-weight="700" fill="#8B97A6" letter-spacing="1.2">04 · SHIP &amp; VOICE</text>
+    <text x="18" y="48" class="sans" font-size="15.5" font-weight="700" fill="#F3F6FA">Delivery &amp; Prose QA</text>
+    <text x="18" y="68" class="sans" font-size="12" fill="#8B97A6">Ship cleanly without AI slop.</text>
+    <rect x="18" y="84" width="230" height="24" rx="5" fill="#0D1117" stroke="#242D38" stroke-width="1"/><text x="28" y="100" class="mono" font-size="11" font-weight="600" fill="#F3F6FA">ready-suite</text><text x="238" y="99.5" class="sans" font-size="10.5" fill="#8B97A6" text-anchor="end">11 launch skills</text>
+    <rect x="18" y="116" width="230" height="24" rx="5" fill="#0D1117" stroke="#242D38" stroke-width="1"/><text x="28" y="132" class="mono" font-size="11" font-weight="600" fill="#F3F6FA">authenticity-check</text><text x="238" y="131.5" class="sans" font-size="10.5" fill="#8B97A6" text-anchor="end">scorer</text>
+    <rect x="18" y="148" width="111" height="24" rx="5" fill="#0D1117" stroke="#242D38" stroke-width="1"/><text x="28" y="164" class="mono" font-size="11" font-weight="600" fill="#F3F6FA">humanizer</text>
+    <rect x="137" y="148" width="111" height="24" rx="5" fill="#0D1117" stroke="#242D38" stroke-width="1"/><text x="147" y="164" class="mono" font-size="11" font-weight="600" fill="#F3F6FA">voiceprint</text>
+  </g>
+
+  <!-- BOTTOM FOUNDATION BAND: Rust Systems & Standalone Publishing (x=32, y=274, w=1136, h=76) -->
+  <g transform="translate(32 274)">
+    <rect width="1136" height="76" rx="10" fill="#161D27" stroke="#242D38" stroke-width="1.2"/>
+    <text x="20" y="26" class="mono" font-size="10.5" font-weight="700" fill="#8B97A6" letter-spacing="1.4">PARALLEL INFRASTRUCTURE &amp; PUBLISHING SYSTEMS</text>
+
+    <!-- 4 evenly distributed foundation items -->
+    <g transform="translate(20 38)">
+      <circle cx="5" cy="12" r="3" fill="#17A87A"/>
+      <text x="16" y="16" class="mono" font-size="12" font-weight="700" fill="#F3F6FA">sumac</text>
+      <text x="66" y="16" class="sans" font-size="12" fill="#8B97A6">Rust MCP / CLI / API bridge</text>
+    </g>
+
+    <g transform="translate(306 38)">
+      <circle cx="5" cy="12" r="3" fill="#17A87A"/>
+      <text x="16" y="16" class="mono" font-size="12" font-weight="700" fill="#F3F6FA">OpenRustClaw</text>
+      <text x="116" y="16" class="sans" font-size="12" fill="#8B97A6">Rust assistant runtime</text>
+    </g>
+
+    <g transform="translate(604 38)">
+      <circle cx="5" cy="12" r="3" fill="#17A87A"/>
+      <text x="16" y="16" class="mono" font-size="12" font-weight="700" fill="#F3F6FA">open-scion</text>
+      <text x="102" y="16" class="sans" font-size="12" fill="#8B97A6">Rust agent-monorepo VCS</text>
+    </g>
+
+    <g transform="translate(888 38)">
+      <circle cx="5" cy="12" r="3" fill="#17A87A"/>
+      <text x="16" y="16" class="mono" font-size="12" font-weight="700" fill="#F3F6FA">scriveno</text>
+      <text x="84" y="16" class="sans" font-size="12" fill="#8B97A6">Spec-driven book pipeline</text>
+    </g>
+  </g>
+</svg>
