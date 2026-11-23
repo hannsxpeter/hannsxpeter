@@ -11,7 +11,7 @@
 
 <h3 align="center">AI engineer building agentic systems, MCP servers, and dev infrastructure.</h3>
 
-<p align="center"><em>Creator of Godpowers. TypeScript / Python / Rust. Ottawa, Canada.</em></p>
+<p align="center"><em>Creator of Godpowers. Scriveno. Mythify. Stack: TypeScript / Python / Rust / Bun Convex. Ottawa, Canada.</em></p>
 
 **Currently:** Founder and Principal Consultant at **[Sharetact](https://sharetact.co)**. AI-forward automation and systems for government and growing business.
 
