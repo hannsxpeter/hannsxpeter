@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-labelledby="t d">
+  <title id="t">Loadout</title>
+  <desc id="d">Arcade loadout screen. Languages: TypeScript, Rust, Python, Bash. Runtime and framework: Bun, SvelteKit, Astro, Convex, Docker. Agent layer: Claude, MCP, Claude Code, Codex, Cursor.</desc>
+  <style>
+    .sans{font-family:"Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif}
+    .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+  </style>
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#1A2420"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="360" fill="#0E1217"/>
+  <rect width="1200" height="360" fill="url(#dots)"/>
+  <rect x="0.5" y="0.5" width="1199" height="359" rx="10" fill="none" stroke="#24302A"/>
+
+  <path d="M1 44H1199V11a10 10 0 0 0-10-10H11A10 10 0 0 0 1 11Z" fill="#151B18"/>
+  <line x1="1" y1="44" x2="1199" y2="44" stroke="#24302A"/>
+  <text x="32" y="28" class="mono" font-size="13" font-weight="700" fill="#E8B84A" letter-spacing="1.5">LOADOUT</text>
+  <text x="600" y="28" class="mono" font-size="13" font-weight="700" fill="#17A87A" text-anchor="middle" letter-spacing="1.5">EQUIPPED</text>
+  <text x="1168" y="28" class="mono" font-size="13" fill="#7F8BA3" text-anchor="end" letter-spacing="1.5">SLOT MAX</text>
+
+  <!-- Languages -->
+  <g transform="translate(28 68)">
+    <rect width="370" height="250" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
+    <text x="20" y="32" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">LANGUAGES</text>
+    <rect x="20" y="52" width="150" height="40" rx="4" fill="#0E1217" stroke="#3178C6"/>
+    <text x="95" y="77" class="mono" font-size="14" font-weight="700" fill="#3178C6" text-anchor="middle">TypeScript</text>
+    <rect x="186" y="52" width="150" height="40" rx="4" fill="#0E1217" stroke="#DEA584"/>
+    <text x="261" y="77" class="mono" font-size="14" font-weight="700" fill="#DEA584" text-anchor="middle">Rust</text>
+    <rect x="20" y="108" width="150" height="40" rx="4" fill="#0E1217" stroke="#3776AB"/>
+    <text x="95" y="133" class="mono" font-size="14" font-weight="700" fill="#3776AB" text-anchor="middle">Python</text>
+    <rect x="186" y="108" width="150" height="40" rx="4" fill="#0E1217" stroke="#4EAA25"/>
+    <text x="261" y="133" class="mono" font-size="14" font-weight="700" fill="#4EAA25" text-anchor="middle">Bash</text>
+    <text x="20" y="190" class="sans" font-size="14" fill="#A8B0C0">Agents and CLIs first.</text>
+    <text x="20" y="214" class="sans" font-size="14" fill="#7F8BA3">Systems work when needed.</text>
+  </g>
+
+  <!-- Runtime / platform -->
+  <g transform="translate(414 68)">
+    <rect width="370" height="250" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
+    <text x="20" y="32" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">RUNTIME</text>
+    <rect x="20" y="52" width="150" height="40" rx="4" fill="#0E1217" stroke="#FBF0DF"/>
+    <text x="95" y="77" class="mono" font-size="14" font-weight="700" fill="#FBF0DF" text-anchor="middle">Bun</text>
+    <rect x="186" y="52" width="150" height="40" rx="4" fill="#0E1217" stroke="#FF3E00"/>
+    <text x="261" y="77" class="mono" font-size="14" font-weight="700" fill="#FF3E00" text-anchor="middle">SvelteKit</text>
+    <rect x="20" y="108" width="150" height="40" rx="4" fill="#0E1217" stroke="#BC52EE"/>
+    <text x="95" y="133" class="mono" font-size="14" font-weight="700" fill="#BC52EE" text-anchor="middle">Astro</text>
+    <rect x="186" y="108" width="150" height="40" rx="4" fill="#0E1217" stroke="#EE342F"/>
+    <text x="261" y="133" class="mono" font-size="14" font-weight="700" fill="#EE342F" text-anchor="middle">Convex</text>
+    <rect x="20" y="164" width="316" height="40" rx="4" fill="#0E1217" stroke="#2496ED"/>
+    <text x="178" y="189" class="mono" font-size="14" font-weight="700" fill="#2496ED" text-anchor="middle">Docker</text>
+    <text x="20" y="234" class="sans" font-size="14" fill="#7F8BA3">Ship and host what you own.</text>
+  </g>
+
+  <!-- Daily drivers / agent layer -->
+  <g transform="translate(800 68)">
+    <rect width="372" height="250" rx="8" fill="#12181A" stroke="#17A87A" stroke-width="2"/>
+    <text x="20" y="32" class="mono" font-size="12" font-weight="700" fill="#17A87A" letter-spacing="2">DAILY DRIVERS</text>
+    <rect x="20" y="52" width="150" height="40" rx="4" fill="#0E1217" stroke="#D97757"/>
+    <text x="95" y="77" class="mono" font-size="14" font-weight="700" fill="#D97757" text-anchor="middle">Claude</text>
+    <rect x="186" y="52" width="150" height="40" rx="4" fill="#0E1217" stroke="#6E56CF"/>
+    <text x="261" y="77" class="mono" font-size="14" font-weight="700" fill="#6E56CF" text-anchor="middle">MCP</text>
+    <rect x="20" y="108" width="316" height="40" rx="4" fill="#10261E" stroke="#17A87A"/>
+    <text x="178" y="133" class="mono" font-size="14" font-weight="700" fill="#17A87A" text-anchor="middle">Claude Code</text>
+    <rect x="20" y="164" width="150" height="40" rx="4" fill="#0E1217" stroke="#E8E2D6"/>
+    <text x="95" y="189" class="mono" font-size="14" font-weight="700" fill="#E8E2D6" text-anchor="middle">Codex</text>
+    <rect x="186" y="164" width="150" height="40" rx="4" fill="#0E1217" stroke="#E8E2D6"/>
+    <text x="261" y="189" class="mono" font-size="14" font-weight="700" fill="#E8E2D6" text-anchor="middle">Cursor</text>
+    <text x="20" y="234" class="sans" font-size="14" fill="#7F8BA3">Where the packages run.</text>
+  </g>
+</svg>
