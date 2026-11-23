@@ -1,69 +1,285 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-labelledby="t d">
-  <title id="t">Hanns Peter</title>
-  <desc id="d">Arcade title screen. HANNS PETER wordmark, tagline AI engineer building agentic systems, MCP servers, and dev infrastructure. Creator of Godpowers. TypeScript / Python / Rust. Ottawa, Canada.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-labelledby="t d">
+  <title id="t">Hanns Peter - Arcade Title Screen</title>
+  <desc id="d">Tactical arcade title screen for Hanns Peter. AI engineer building agentic systems, MCP servers, and dev infrastructure. Creator of Godpowers. TypeScript, Python, Rust. Ottawa, Canada.</desc>
   <style>
-    .sans{font-family:"Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif}
+    .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
     .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
-    .display{font-family:Newsreader,Georgia,"Times New Roman",serif}
+    @keyframes floatY{0%,100%{transform:translateY(0px)}50%{transform:translateY(-4px)}}
+    @keyframes pulseOp{0%,100%{opacity:1}50%{opacity:0.35}}
+    @keyframes scanMove{0%{transform:translateY(0px)}100%{transform:translateY(170px)}}
+    .bob{animation:floatY 3.2s ease-in-out infinite}
+    .bob-delay{animation:floatY 3.2s ease-in-out 0.8s infinite}
+    .blink{animation:pulseOp 1.2s steps(2,start) infinite}
+    .scan{animation:scanMove 4.5s linear infinite}
   </style>
   <defs>
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#152018" stroke-width="1"/>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#131E24" stroke-width="1"/>
     </pattern>
-    <radialGradient id="glow" cx="82%" cy="42%" r="38%">
-      <stop offset="0%" stop-color="#17A87A" stop-opacity="0.28"/>
-      <stop offset="100%" stop-color="#0E1217" stop-opacity="0"/>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000000" fill-opacity="0.22"/>
+    </pattern>
+    <radialGradient id="emeraldGlow" cx="76%" cy="46%" r="42%">
+      <stop offset="0%" stop-color="#17A87A" stop-opacity="0.22"/>
+      <stop offset="65%" stop-color="#17A87A" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0A0E12" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="amberGlow" cx="14%" cy="22%" r="36%">
+      <stop offset="0%" stop-color="#E8B84A" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#0A0E12" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="crtClip">
+      <rect x="18" y="18" width="352" height="176" rx="4"/>
+    </clipPath>
   </defs>
 
-  <rect width="1200" height="420" fill="#0E1217"/>
-  <rect width="1200" height="420" fill="url(#grid)"/>
-  <rect width="1200" height="420" fill="url(#glow)"/>
-  <rect x="0.5" y="0.5" width="1199" height="419" rx="10" fill="none" stroke="#24302A"/>
+  <!-- Chassis background -->
+  <rect width="1200" height="440" rx="12" fill="#0A0E12"/>
+  <rect width="1200" height="440" rx="12" fill="url(#grid)"/>
+  <rect width="1200" height="440" rx="12" fill="url(#emeraldGlow)"/>
+  <rect width="1200" height="440" rx="12" fill="url(#amberGlow)"/>
+  <rect x="1" y="1" width="1198" height="438" rx="11" fill="none" stroke="#22323A" stroke-width="2"/>
 
-  <path d="M1 44H1199V11a10 10 0 0 0-10-10H11A10 10 0 0 0 1 11Z" fill="#151B18"/>
-  <line x1="1" y1="44" x2="1199" y2="44" stroke="#24302A"/>
-  <text x="32" y="28" class="mono" font-size="13" font-weight="700" fill="#E8B84A" letter-spacing="1.5">1UP</text>
-  <text x="78" y="28" class="mono" font-size="13" font-weight="700" fill="#E8E2D6" letter-spacing="1.5">HANNS</text>
-  <text x="600" y="28" class="mono" font-size="13" font-weight="700" fill="#17A87A" text-anchor="middle" letter-spacing="1.5">HI-SCORE: 14 PACKAGES</text>
-  <text x="1168" y="28" class="mono" font-size="13" fill="#7F8BA3" text-anchor="end" letter-spacing="1.5">CREDIT 01</text>
+  <!-- Top Arcade HUD Bar -->
+  <path d="M2 46H1198V12a10 10 0 0 0-10-10H12A10 10 0 0 0 2 12Z" fill="#141D22"/>
+  <line x1="2" y1="46" x2="1198" y2="46" stroke="#22323A" stroke-width="1.5"/>
 
-  <text x="56" y="100" class="mono" font-size="14" font-weight="700" fill="#E8B84A" letter-spacing="4">@HXP-TOOLS / OTTAWA</text>
-  <text x="56" y="172" class="display" font-size="68" font-weight="600" fill="#F4EFE4">HANNS PETER</text>
-  <text x="56" y="214" class="sans" font-size="18" font-weight="600" fill="#E8E2D6">AI engineer building agentic systems,</text>
-  <text x="56" y="240" class="sans" font-size="18" font-weight="600" fill="#E8E2D6">MCP servers, and dev infrastructure.</text>
-  <text x="56" y="268" class="sans" font-size="16" font-weight="600" fill="#A8B0C0">Creator of Godpowers.</text>
+  <!-- Left HUD cluster -->
+  <rect x="24" y="13" width="34" height="20" rx="3" fill="#0E2921" stroke="#17A87A" stroke-width="1.2"/>
+  <text x="41" y="27" class="mono" font-size="11" font-weight="700" fill="#2EE6A6" text-anchor="middle">P1</text>
+  <text x="70" y="28" class="mono" font-size="12" font-weight="700" fill="#F4EFE4" letter-spacing="1.5">HANNS.SYS</text>
+  <circle cx="170" cy="24" r="4" fill="#2EE6A6" class="blink"/>
+  <text x="182" y="28" class="mono" font-size="11" fill="#17A87A" letter-spacing="1.2">ONLINE</text>
 
-  <text x="56" y="312" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">PRESS START</text>
-  <rect x="56" y="324" width="460" height="44" fill="#10261E" stroke="#17A87A" stroke-width="2"/>
-  <text x="74" y="352" class="mono" font-size="17" font-weight="700" fill="#17A87A">&gt; npm i @hxp-tools/*</text>
-  <rect x="470" y="337" width="11" height="19" fill="#17A87A">
-    <animate attributeName="opacity" values="1;0" dur="1s" calcMode="discrete" repeatCount="indefinite"/>
-  </rect>
-  <text x="56" y="400" class="mono" font-size="12" fill="#7F8BA3" letter-spacing="1.5">TYPESCRIPT / PYTHON / RUST / OTTAWA, CANADA</text>
+  <!-- Center HUD cluster -->
+  <text x="600" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" text-anchor="middle" letter-spacing="1.8">HI-SCORE // 14 PACKAGES ON @HXP-TOOLS</text>
 
-  <!-- Select player panel -->
-  <g transform="translate(700 78)">
-    <rect x="0" y="0" width="440" height="280" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
-    <text x="220" y="36" class="mono" font-size="13" font-weight="700" fill="#E8B84A" text-anchor="middle" letter-spacing="2">SELECT PLAYER</text>
+  <!-- Right HUD cluster -->
+  <text x="1044" y="28" class="mono" font-size="11" fill="#8295A0" text-anchor="end" letter-spacing="1.2">OTTAWA, CA</text>
+  <rect x="1062" y="13" width="112" height="20" rx="3" fill="#2A2312" stroke="#E8B84A" stroke-width="1.2"/>
+  <text x="1118" y="27" class="mono" font-size="11" font-weight="700" fill="#E8B84A" text-anchor="middle" letter-spacing="1.2">EXP // 20 YRS</text>
 
-    <rect x="28" y="56" width="180" height="150" rx="6" fill="#0E1217" stroke="#17A87A" stroke-width="2"/>
-    <text x="118" y="88" class="mono" font-size="11" font-weight="700" fill="#17A87A" text-anchor="middle" letter-spacing="1.5">P1</text>
-    <!-- robot head -->
-    <rect x="78" y="100" width="80" height="56" rx="4" fill="#1A2E28" stroke="#17A87A"/>
-    <rect x="92" y="116" width="18" height="14" fill="#17A87A"/>
-    <rect x="126" y="116" width="18" height="14" fill="#17A87A"/>
-    <rect x="100" y="140" width="36" height="6" fill="#E8B84A"/>
-    <text x="118" y="184" class="mono" font-size="14" font-weight="700" fill="#F4EFE4" text-anchor="middle">AGENT</text>
+  <!-- Left Stage: Cartridge Badge + Pixel Wordmark + Tagline + Start Bar -->
+  <g>
+    <!-- Cartridge eyebrow pill -->
+    <path d="M57,72 H315 L320,77 V91 L315,96 H57 L52,91 V77 Z" fill="#10171C" stroke="#2E454D" stroke-width="1.2"/>
+    <rect x="62" y="79" width="8" height="10" fill="#E8B84A"/>
+    <text x="80" y="88" class="mono" font-size="11" font-weight="700" fill="#E8B84A" letter-spacing="2">CARTRIDGE 01 // GODPOWERS</text>
 
-    <rect x="232" y="56" width="180" height="150" rx="6" fill="#0E1217" stroke="#2A3A34" stroke-width="2"/>
-    <text x="322" y="88" class="mono" font-size="11" font-weight="700" fill="#7F8BA3" text-anchor="middle" letter-spacing="1.5">P2</text>
-    <!-- founder mark: HP monogram block -->
-    <rect x="282" y="100" width="80" height="56" rx="4" fill="#1A2228" stroke="#7F8BA3"/>
-    <text x="322" y="136" class="sans" font-size="28" font-weight="800" fill="#E8E2D6" text-anchor="middle">HP</text>
-    <text x="322" y="184" class="mono" font-size="14" font-weight="700" fill="#A8B0C0" text-anchor="middle">FOUNDER</text>
+    <!-- Bespoke Geometric Pixel Wordmark: HANNS PETER -->
+    <g><rect x="56" y="118" width="9" height="9" fill="#10362A"/><rect x="92" y="118" width="9" height="9" fill="#10362A"/><rect x="56" y="127" width="9" height="9" fill="#10362A"/><rect x="92" y="127" width="9" height="9" fill="#10362A"/><rect x="56" y="136" width="9" height="9" fill="#10362A"/><rect x="92" y="136" width="9" height="9" fill="#10362A"/><rect x="56" y="145" width="45" height="9" fill="#10362A"/><rect x="56" y="154" width="9" height="9" fill="#10362A"/><rect x="92" y="154" width="9" height="9" fill="#10362A"/><rect x="56" y="163" width="9" height="9" fill="#10362A"/><rect x="92" y="163" width="9" height="9" fill="#10362A"/><rect x="56" y="172" width="9" height="9" fill="#10362A"/><rect x="92" y="172" width="9" height="9" fill="#10362A"/><rect x="118" y="118" width="27" height="9" fill="#10362A"/><rect x="109" y="127" width="9" height="9" fill="#10362A"/><rect x="145" y="127" width="9" height="9" fill="#10362A"/><rect x="109" y="136" width="9" height="9" fill="#10362A"/><rect x="145" y="136" width="9" height="9" fill="#10362A"/><rect x="109" y="145" width="45" height="9" fill="#10362A"/><rect x="109" y="154" width="9" height="9" fill="#10362A"/><rect x="145" y="154" width="9" height="9" fill="#10362A"/><rect x="109" y="163" width="9" height="9" fill="#10362A"/><rect x="145" y="163" width="9" height="9" fill="#10362A"/><rect x="109" y="172" width="9" height="9" fill="#10362A"/><rect x="145" y="172" width="9" height="9" fill="#10362A"/><rect x="162" y="118" width="9" height="9" fill="#10362A"/><rect x="198" y="118" width="9" height="9" fill="#10362A"/><rect x="162" y="127" width="18" height="9" fill="#10362A"/><rect x="198" y="127" width="9" height="9" fill="#10362A"/><rect x="162" y="136" width="9" height="9" fill="#10362A"/><rect x="180" y="136" width="9" height="9" fill="#10362A"/><rect x="198" y="136" width="9" height="9" fill="#10362A"/><rect x="162" y="145" width="9" height="9" fill="#10362A"/><rect x="180" y="145" width="9" height="9" fill="#10362A"/><rect x="198" y="145" width="9" height="9" fill="#10362A"/><rect x="162" y="154" width="9" height="9" fill="#10362A"/><rect x="189" y="154" width="18" height="9" fill="#10362A"/><rect x="162" y="163" width="9" height="9" fill="#10362A"/><rect x="198" y="163" width="9" height="9" fill="#10362A"/><rect x="162" y="172" width="9" height="9" fill="#10362A"/><rect x="198" y="172" width="9" height="9" fill="#10362A"/><rect x="215" y="118" width="9" height="9" fill="#10362A"/><rect x="251" y="118" width="9" height="9" fill="#10362A"/><rect x="215" y="127" width="18" height="9" fill="#10362A"/><rect x="251" y="127" width="9" height="9" fill="#10362A"/><rect x="215" y="136" width="9" height="9" fill="#10362A"/><rect x="233" y="136" width="9" height="9" fill="#10362A"/><rect x="251" y="136" width="9" height="9" fill="#10362A"/><rect x="215" y="145" width="9" height="9" fill="#10362A"/><rect x="233" y="145" width="9" height="9" fill="#10362A"/><rect x="251" y="145" width="9" height="9" fill="#10362A"/><rect x="215" y="154" width="9" height="9" fill="#10362A"/><rect x="242" y="154" width="18" height="9" fill="#10362A"/><rect x="215" y="163" width="9" height="9" fill="#10362A"/><rect x="251" y="163" width="9" height="9" fill="#10362A"/><rect x="215" y="172" width="9" height="9" fill="#10362A"/><rect x="251" y="172" width="9" height="9" fill="#10362A"/><rect x="277" y="118" width="36" height="9" fill="#10362A"/><rect x="268" y="127" width="9" height="9" fill="#10362A"/><rect x="268" y="136" width="9" height="9" fill="#10362A"/><rect x="277" y="145" width="27" height="9" fill="#10362A"/><rect x="304" y="154" width="9" height="9" fill="#10362A"/><rect x="304" y="163" width="9" height="9" fill="#10362A"/><rect x="268" y="172" width="36" height="9" fill="#10362A"/><rect x="347" y="118" width="36" height="9" fill="#10362A"/><rect x="347" y="127" width="9" height="9" fill="#10362A"/><rect x="383" y="127" width="9" height="9" fill="#10362A"/><rect x="347" y="136" width="9" height="9" fill="#10362A"/><rect x="383" y="136" width="9" height="9" fill="#10362A"/><rect x="347" y="145" width="36" height="9" fill="#10362A"/><rect x="347" y="154" width="9" height="9" fill="#10362A"/><rect x="347" y="163" width="9" height="9" fill="#10362A"/><rect x="347" y="172" width="9" height="9" fill="#10362A"/><rect x="400" y="118" width="45" height="9" fill="#10362A"/><rect x="400" y="127" width="9" height="9" fill="#10362A"/><rect x="400" y="136" width="9" height="9" fill="#10362A"/><rect x="400" y="145" width="36" height="9" fill="#10362A"/><rect x="400" y="154" width="9" height="9" fill="#10362A"/><rect x="400" y="163" width="9" height="9" fill="#10362A"/><rect x="400" y="172" width="45" height="9" fill="#10362A"/><rect x="453" y="118" width="45" height="9" fill="#10362A"/><rect x="471" y="127" width="9" height="9" fill="#10362A"/><rect x="471" y="136" width="9" height="9" fill="#10362A"/><rect x="471" y="145" width="9" height="9" fill="#10362A"/><rect x="471" y="154" width="9" height="9" fill="#10362A"/><rect x="471" y="163" width="9" height="9" fill="#10362A"/><rect x="471" y="172" width="9" height="9" fill="#10362A"/><rect x="506" y="118" width="45" height="9" fill="#10362A"/><rect x="506" y="127" width="9" height="9" fill="#10362A"/><rect x="506" y="136" width="9" height="9" fill="#10362A"/><rect x="506" y="145" width="36" height="9" fill="#10362A"/><rect x="506" y="154" width="9" height="9" fill="#10362A"/><rect x="506" y="163" width="9" height="9" fill="#10362A"/><rect x="506" y="172" width="45" height="9" fill="#10362A"/><rect x="559" y="118" width="36" height="9" fill="#10362A"/><rect x="559" y="127" width="9" height="9" fill="#10362A"/><rect x="595" y="127" width="9" height="9" fill="#10362A"/><rect x="559" y="136" width="9" height="9" fill="#10362A"/><rect x="595" y="136" width="9" height="9" fill="#10362A"/><rect x="559" y="145" width="36" height="9" fill="#10362A"/><rect x="559" y="154" width="9" height="9" fill="#10362A"/><rect x="577" y="154" width="9" height="9" fill="#10362A"/><rect x="559" y="163" width="9" height="9" fill="#10362A"/><rect x="586" y="163" width="9" height="9" fill="#10362A"/><rect x="559" y="172" width="9" height="9" fill="#10362A"/><rect x="595" y="172" width="9" height="9" fill="#10362A"/></g>
+    <g><rect x="52" y="114" width="9" height="9" fill="#F4EFE4"/><rect x="88" y="114" width="9" height="9" fill="#F4EFE4"/><rect x="52" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="88" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="52" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="88" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="52" y="141" width="45" height="9" fill="#F4EFE4"/><rect x="52" y="150" width="9" height="9" fill="#F4EFE4"/><rect x="88" y="150" width="9" height="9" fill="#F4EFE4"/><rect x="52" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="88" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="52" y="168" width="9" height="9" fill="#F4EFE4"/><rect x="88" y="168" width="9" height="9" fill="#F4EFE4"/><rect x="114" y="114" width="27" height="9" fill="#F4EFE4"/><rect x="105" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="141" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="105" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="141" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="105" y="141" width="45" height="9" fill="#F4EFE4"/><rect x="105" y="150" width="9" height="9" fill="#F4EFE4"/><rect x="141" y="150" width="9" height="9" fill="#F4EFE4"/><rect x="105" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="141" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="105" y="168" width="9" height="9" fill="#F4EFE4"/><rect x="141" y="168" width="9" height="9" fill="#F4EFE4"/><rect x="158" y="114" width="9" height="9" fill="#F4EFE4"/><rect x="194" y="114" width="9" height="9" fill="#F4EFE4"/><rect x="158" y="123" width="18" height="9" fill="#F4EFE4"/><rect x="194" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="158" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="176" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="194" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="158" y="141" width="9" height="9" fill="#F4EFE4"/><rect x="176" y="141" width="9" height="9" fill="#F4EFE4"/><rect x="194" y="141" width="9" height="9" fill="#F4EFE4"/><rect x="158" y="150" width="9" height="9" fill="#F4EFE4"/><rect x="185" y="150" width="18" height="9" fill="#F4EFE4"/><rect x="158" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="194" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="158" y="168" width="9" height="9" fill="#F4EFE4"/><rect x="194" y="168" width="9" height="9" fill="#F4EFE4"/><rect x="211" y="114" width="9" height="9" fill="#F4EFE4"/><rect x="247" y="114" width="9" height="9" fill="#F4EFE4"/><rect x="211" y="123" width="18" height="9" fill="#F4EFE4"/><rect x="247" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="211" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="229" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="247" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="211" y="141" width="9" height="9" fill="#F4EFE4"/><rect x="229" y="141" width="9" height="9" fill="#F4EFE4"/><rect x="247" y="141" width="9" height="9" fill="#F4EFE4"/><rect x="211" y="150" width="9" height="9" fill="#F4EFE4"/><rect x="238" y="150" width="18" height="9" fill="#F4EFE4"/><rect x="211" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="247" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="211" y="168" width="9" height="9" fill="#F4EFE4"/><rect x="247" y="168" width="9" height="9" fill="#F4EFE4"/><rect x="273" y="114" width="36" height="9" fill="#F4EFE4"/><rect x="264" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="264" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="273" y="141" width="27" height="9" fill="#F4EFE4"/><rect x="300" y="150" width="9" height="9" fill="#F4EFE4"/><rect x="300" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="264" y="168" width="36" height="9" fill="#F4EFE4"/><rect x="343" y="114" width="36" height="9" fill="#F4EFE4"/><rect x="343" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="379" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="343" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="379" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="343" y="141" width="36" height="9" fill="#F4EFE4"/><rect x="343" y="150" width="9" height="9" fill="#F4EFE4"/><rect x="343" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="343" y="168" width="9" height="9" fill="#F4EFE4"/><rect x="396" y="114" width="45" height="9" fill="#F4EFE4"/><rect x="396" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="396" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="396" y="141" width="36" height="9" fill="#F4EFE4"/><rect x="396" y="150" width="9" height="9" fill="#F4EFE4"/><rect x="396" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="396" y="168" width="45" height="9" fill="#F4EFE4"/><rect x="449" y="114" width="45" height="9" fill="#F4EFE4"/><rect x="467" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="467" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="467" y="141" width="9" height="9" fill="#F4EFE4"/><rect x="467" y="150" width="9" height="9" fill="#F4EFE4"/><rect x="467" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="467" y="168" width="9" height="9" fill="#F4EFE4"/><rect x="502" y="114" width="45" height="9" fill="#F4EFE4"/><rect x="502" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="502" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="502" y="141" width="36" height="9" fill="#F4EFE4"/><rect x="502" y="150" width="9" height="9" fill="#F4EFE4"/><rect x="502" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="502" y="168" width="45" height="9" fill="#F4EFE4"/><rect x="555" y="114" width="36" height="9" fill="#F4EFE4"/><rect x="555" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="591" y="123" width="9" height="9" fill="#F4EFE4"/><rect x="555" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="591" y="132" width="9" height="9" fill="#F4EFE4"/><rect x="555" y="141" width="36" height="9" fill="#F4EFE4"/><rect x="555" y="150" width="9" height="9" fill="#F4EFE4"/><rect x="573" y="150" width="9" height="9" fill="#F4EFE4"/><rect x="555" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="582" y="159" width="9" height="9" fill="#F4EFE4"/><rect x="555" y="168" width="9" height="9" fill="#F4EFE4"/><rect x="591" y="168" width="9" height="9" fill="#F4EFE4"/></g>
 
-    <text x="220" y="240" class="mono" font-size="12" fill="#7F8BA3" text-anchor="middle" letter-spacing="1">SHARETACT + OPEN TOOLING</text>
-    <text x="220" y="262" class="mono" font-size="12" font-weight="700" fill="#17A87A" text-anchor="middle" letter-spacing="1">WORLD MAP UNLOCKED</text>
+    <!-- Accent rule under wordmark -->
+    <rect x="52" y="192" width="140" height="3" fill="#17A87A"/>
+    <rect x="198" y="192" width="32" height="3" fill="#E8B84A"/>
+    <rect x="236" y="193" width="440" height="1" fill="#22323A"/>
+
+    <!-- Public Bio Copy -->
+    <text x="52" y="226" class="sans" font-size="19" font-weight="600" fill="#F4EFE4">AI engineer building agentic systems, MCP servers,</text>
+    <text x="52" y="252" class="sans" font-size="19" font-weight="600" fill="#F4EFE4">and dev infrastructure.</text>
+    <text x="52" y="282" class="mono" font-size="12.5" fill="#8295A0" letter-spacing="0.4">Creator of Godpowers, Scriveno, Mythify  /  TS  /  Python  /  Rust  /  Bun  /  Convex</text>
+
+    <!-- Press Start Terminal Box -->
+    <path d="M60,308 H668 L676,316 V352 L668,360 H60 L52,352 V316 Z" fill="#0C1C17" stroke="#17A87A" stroke-width="1.8"/>
+    <rect x="66" y="320" width="96" height="28" rx="3" fill="#E8B84A"/>
+    <text x="114" y="339" class="mono" font-size="12" font-weight="800" fill="#0A0E12" text-anchor="middle" letter-spacing="1.4">PRESS START</text>
+    <text x="180" y="340" class="mono" font-size="16" font-weight="700" fill="#2EE6A6">$ npx @hxp-tools/godpowers</text>
+    <rect x="438" y="325" width="10" height="18" fill="#2EE6A6" class="blink"/>
+    <text x="656" y="339" class="mono" font-size="11" fill="#8295A0" text-anchor="end">EXIT 0 ONLY</text>
+
+    <!-- Bottom Footer Telemetry -->
+    <text x="52" y="398" class="mono" font-size="11" fill="#8295A0" letter-spacing="1.4">ACTIVE QUEST: SHARETACT  //  FOUNDER &amp; PRINCIPAL CONSULTANT</text>
+    <text x="52" y="416" class="mono" font-size="11" fill="#526570" letter-spacing="1.2">EVIDENCE OVER VIBES  /  GATES OVER HOPE  /  OWN, DO NOT RENT</text>
+  </g>
+
+  <!-- Right Stage: Recessed Tactical CRT Monitor & Pilot Card -->
+  <g transform="translate(768 68)">
+    <!-- Outer hardware housing -->
+    <path d="M12,0 H376 L388,12 V332 L376,344 H12 L0,332 V12 Z" fill="#10171C" stroke="#2E454D" stroke-width="1.8"/>
+    <!-- Corner screws -->
+    <circle cx="14" cy="14" r="2.5" fill="#2E454D"/>
+    <circle cx="374" cy="14" r="2.5" fill="#2E454D"/>
+    <circle cx="14" cy="330" r="2.5" fill="#2E454D"/>
+    <circle cx="374" cy="330" r="2.5" fill="#2E454D"/>
+
+    <!-- Recessed CRT Viewport -->
+    <rect x="18" y="18" width="352" height="176" rx="4" fill="#070C0E" stroke="#17A87A" stroke-width="1.5"/>
+    <g clip-path="url(#crtClip)">
+      <!-- Subtle perspective grid floor inside CRT -->
+      <line x1="18" y1="152" x2="370" y2="152" stroke="#143228" stroke-width="1"/>
+      <line x1="18" y1="168" x2="370" y2="168" stroke="#112820" stroke-width="1"/>
+      <line x1="18" y1="184" x2="370" y2="184" stroke="#0E201A" stroke-width="1"/>
+      <line x1="88" y1="152" x2="48" y2="194" stroke="#143228" stroke-width="1"/>
+      <line x1="154" y1="152" x2="134" y2="194" stroke="#143228" stroke-width="1"/>
+      <line x1="220" y1="152" x2="234" y2="194" stroke="#143228" stroke-width="1"/>
+      <line x1="286" y1="152" x2="326" y2="194" stroke="#143228" stroke-width="1"/>
+
+      <!-- Pixel stars / ambient particles -->
+      <rect x="46" y="42" width="4" height="4" fill="#17A87A" opacity="0.5"/>
+      <rect x="74" y="76" width="4" height="4" fill="#E8B84A" opacity="0.7"/>
+      <rect x="316" y="46" width="4" height="4" fill="#2EE6A6" opacity="0.6"/>
+      <rect x="332" y="102" width="4" height="4" fill="#E8B84A" opacity="0.5"/>
+      <rect x="52" y="120" width="4" height="4" fill="#17A87A" opacity="0.4"/>
+
+      <!-- Animated Mecha-Agent Sprite -->
+      <g class="bob">
+      <rect x="156" y="36" width="12" height="6" fill="#E8B84A"/>
+      <rect x="156" y="42" width="12" height="6" fill="#E8B84A"/>
+      <rect x="150" y="48" width="24" height="6" fill="#17A87A"/>
+      <rect x="138" y="54" width="48" height="6" fill="#17A87A"/>
+      <rect x="132" y="60" width="6" height="6" fill="#17A87A"/>
+      <rect x="138" y="60" width="48" height="6" fill="#0E2D24"/>
+      <rect x="186" y="60" width="6" height="6" fill="#17A87A"/>
+      <rect x="126" y="66" width="6" height="6" fill="#17A87A"/>
+      <rect x="132" y="66" width="6" height="6" fill="#0E2D24"/>
+      <rect x="138" y="66" width="48" height="6" fill="#122027"/>
+      <rect x="186" y="66" width="6" height="6" fill="#0E2D24"/>
+      <rect x="192" y="66" width="6" height="6" fill="#17A87A"/>
+      <rect x="126" y="72" width="6" height="6" fill="#17A87A"/>
+      <rect x="132" y="72" width="6" height="6" fill="#0E2D24"/>
+      <rect x="138" y="72" width="6" height="6" fill="#122027"/>
+      <rect x="144" y="72" width="12" height="6" fill="#38F2B0"/>
+      <rect x="156" y="72" width="12" height="6" fill="#122027"/>
+      <rect x="168" y="72" width="12" height="6" fill="#38F2B0"/>
+      <rect x="180" y="72" width="6" height="6" fill="#122027"/>
+      <rect x="186" y="72" width="6" height="6" fill="#0E2D24"/>
+      <rect x="192" y="72" width="6" height="6" fill="#17A87A"/>
+      <rect x="126" y="78" width="6" height="6" fill="#17A87A"/>
+      <rect x="132" y="78" width="6" height="6" fill="#0E2D24"/>
+      <rect x="138" y="78" width="6" height="6" fill="#122027"/>
+      <rect x="144" y="78" width="12" height="6" fill="#38F2B0"/>
+      <rect x="156" y="78" width="12" height="6" fill="#122027"/>
+      <rect x="168" y="78" width="12" height="6" fill="#38F2B0"/>
+      <rect x="180" y="78" width="6" height="6" fill="#122027"/>
+      <rect x="186" y="78" width="6" height="6" fill="#0E2D24"/>
+      <rect x="192" y="78" width="6" height="6" fill="#17A87A"/>
+      <rect x="126" y="84" width="6" height="6" fill="#17A87A"/>
+      <rect x="132" y="84" width="6" height="6" fill="#0E2D24"/>
+      <rect x="138" y="84" width="48" height="6" fill="#122027"/>
+      <rect x="186" y="84" width="6" height="6" fill="#0E2D24"/>
+      <rect x="192" y="84" width="6" height="6" fill="#17A87A"/>
+      <rect x="126" y="90" width="6" height="6" fill="#17A87A"/>
+      <rect x="132" y="90" width="6" height="6" fill="#0E2D24"/>
+      <rect x="138" y="90" width="12" height="6" fill="#122027"/>
+      <rect x="150" y="90" width="24" height="6" fill="#E8B84A"/>
+      <rect x="174" y="90" width="12" height="6" fill="#122027"/>
+      <rect x="186" y="90" width="6" height="6" fill="#0E2D24"/>
+      <rect x="192" y="90" width="6" height="6" fill="#17A87A"/>
+      <rect x="132" y="96" width="6" height="6" fill="#17A87A"/>
+      <rect x="138" y="96" width="48" height="6" fill="#0E2D24"/>
+      <rect x="186" y="96" width="6" height="6" fill="#17A87A"/>
+      <rect x="138" y="102" width="48" height="6" fill="#17A87A"/>
+      <rect x="120" y="108" width="18" height="6" fill="#17A87A"/>
+      <rect x="138" y="108" width="12" height="6" fill="#0E2D24"/>
+      <rect x="150" y="108" width="24" height="6" fill="#17A87A"/>
+      <rect x="174" y="108" width="12" height="6" fill="#0E2D24"/>
+      <rect x="186" y="108" width="18" height="6" fill="#17A87A"/>
+      <rect x="114" y="114" width="12" height="6" fill="#17A87A"/>
+      <rect x="126" y="114" width="12" height="6" fill="#0E2D24"/>
+      <rect x="138" y="114" width="12" height="6" fill="#17A87A"/>
+      <rect x="150" y="114" width="24" height="6" fill="#F4EFE4"/>
+      <rect x="174" y="114" width="12" height="6" fill="#17A87A"/>
+      <rect x="186" y="114" width="12" height="6" fill="#0E2D24"/>
+      <rect x="198" y="114" width="12" height="6" fill="#17A87A"/>
+      <rect x="114" y="120" width="12" height="6" fill="#17A87A"/>
+      <rect x="126" y="120" width="12" height="6" fill="#0E2D24"/>
+      <rect x="138" y="120" width="12" height="6" fill="#17A87A"/>
+      <rect x="150" y="120" width="6" height="6" fill="#F4EFE4"/>
+      <rect x="156" y="120" width="12" height="6" fill="#17A87A"/>
+      <rect x="168" y="120" width="6" height="6" fill="#F4EFE4"/>
+      <rect x="174" y="120" width="12" height="6" fill="#17A87A"/>
+      <rect x="186" y="120" width="12" height="6" fill="#0E2D24"/>
+      <rect x="198" y="120" width="12" height="6" fill="#17A87A"/>
+      <rect x="114" y="126" width="12" height="6" fill="#17A87A"/>
+      <rect x="138" y="126" width="12" height="6" fill="#17A87A"/>
+      <rect x="150" y="126" width="24" height="6" fill="#F4EFE4"/>
+      <rect x="174" y="126" width="12" height="6" fill="#17A87A"/>
+      <rect x="198" y="126" width="12" height="6" fill="#17A87A"/>
+      <rect x="138" y="132" width="12" height="6" fill="#17A87A"/>
+      <rect x="174" y="132" width="12" height="6" fill="#17A87A"/>
+      <rect x="132" y="138" width="18" height="6" fill="#17A87A"/>
+      <rect x="174" y="138" width="18" height="6" fill="#17A87A"/>
+      </g>
+
+      <!-- Floating Proof Shield Sprite -->
+      <g class="bob-delay">
+      <rect x="262" y="60" width="25" height="5" fill="#E8B84A"/>
+      <rect x="257" y="65" width="5" height="5" fill="#E8B84A"/>
+      <rect x="262" y="65" width="25" height="5" fill="#17A87A"/>
+      <rect x="287" y="65" width="5" height="5" fill="#E8B84A"/>
+      <rect x="252" y="70" width="5" height="5" fill="#E8B84A"/>
+      <rect x="257" y="70" width="5" height="5" fill="#17A87A"/>
+      <rect x="262" y="70" width="25" height="5" fill="#0D241D"/>
+      <rect x="287" y="70" width="5" height="5" fill="#17A87A"/>
+      <rect x="292" y="70" width="5" height="5" fill="#E8B84A"/>
+      <rect x="252" y="75" width="5" height="5" fill="#E8B84A"/>
+      <rect x="257" y="75" width="5" height="5" fill="#17A87A"/>
+      <rect x="262" y="75" width="5" height="5" fill="#0D241D"/>
+      <rect x="267" y="75" width="15" height="5" fill="#17A87A"/>
+      <rect x="282" y="75" width="5" height="5" fill="#0D241D"/>
+      <rect x="287" y="75" width="5" height="5" fill="#17A87A"/>
+      <rect x="292" y="75" width="5" height="5" fill="#E8B84A"/>
+      <rect x="252" y="80" width="5" height="5" fill="#E8B84A"/>
+      <rect x="257" y="80" width="5" height="5" fill="#17A87A"/>
+      <rect x="262" y="80" width="5" height="5" fill="#0D241D"/>
+      <rect x="267" y="80" width="5" height="5" fill="#17A87A"/>
+      <rect x="272" y="80" width="5" height="5" fill="#E8B84A"/>
+      <rect x="277" y="80" width="5" height="5" fill="#17A87A"/>
+      <rect x="282" y="80" width="5" height="5" fill="#0D241D"/>
+      <rect x="287" y="80" width="5" height="5" fill="#17A87A"/>
+      <rect x="292" y="80" width="5" height="5" fill="#E8B84A"/>
+      <rect x="252" y="85" width="5" height="5" fill="#E8B84A"/>
+      <rect x="257" y="85" width="5" height="5" fill="#17A87A"/>
+      <rect x="262" y="85" width="5" height="5" fill="#0D241D"/>
+      <rect x="267" y="85" width="15" height="5" fill="#17A87A"/>
+      <rect x="282" y="85" width="5" height="5" fill="#0D241D"/>
+      <rect x="287" y="85" width="5" height="5" fill="#17A87A"/>
+      <rect x="292" y="85" width="5" height="5" fill="#E8B84A"/>
+      <rect x="257" y="90" width="5" height="5" fill="#E8B84A"/>
+      <rect x="262" y="90" width="5" height="5" fill="#17A87A"/>
+      <rect x="267" y="90" width="15" height="5" fill="#0D241D"/>
+      <rect x="282" y="90" width="5" height="5" fill="#17A87A"/>
+      <rect x="287" y="90" width="5" height="5" fill="#E8B84A"/>
+      <rect x="262" y="95" width="5" height="5" fill="#E8B84A"/>
+      <rect x="267" y="95" width="5" height="5" fill="#17A87A"/>
+      <rect x="272" y="95" width="5" height="5" fill="#0D241D"/>
+      <rect x="277" y="95" width="5" height="5" fill="#17A87A"/>
+      <rect x="282" y="95" width="5" height="5" fill="#E8B84A"/>
+      <rect x="267" y="100" width="5" height="5" fill="#E8B84A"/>
+      <rect x="272" y="100" width="5" height="5" fill="#17A87A"/>
+      <rect x="277" y="100" width="5" height="5" fill="#E8B84A"/>
+      <rect x="272" y="105" width="5" height="5" fill="#E8B84A"/>
+      </g>
+
+      <!-- Floating EXIT 0 badge inside CRT -->
+      <rect x="242" y="118" width="84" height="22" rx="2" fill="#0E2921" stroke="#17A87A" stroke-width="1.2"/>
+      <text x="284" y="133" class="mono" font-size="11" font-weight="700" fill="#2EE6A6" text-anchor="middle">GATE: OK</text>
+
+      <!-- CRT label top-left -->
+      <text x="30" y="34" class="mono" font-size="10" fill="#17A87A" letter-spacing="1.2">UNIT // AGENT-01</text>
+
+      <!-- Moving scan beam -->
+      <rect x="18" y="18" width="352" height="16" fill="#2EE6A6" fill-opacity="0.06" class="scan"/>
+      <!-- Scanlines overlay -->
+      <rect x="18" y="18" width="352" height="176" fill="url(#scanlines)"/>
+    </g>
+
+    <!-- Pilot Telemetry Below CRT -->
+    <text x="22" y="218" class="mono" font-size="11" font-weight="700" fill="#E8B84A" letter-spacing="1.6">PLAYER PROFILE</text>
+    <text x="366" y="218" class="mono" font-size="11" fill="#2EE6A6" text-anchor="end">8 WORLDS UNLOCKED</text>
+    <line x1="22" y1="228" x2="366" y2="228" stroke="#22323A" stroke-width="1"/>
+
+    <text x="22" y="250" class="mono" font-size="11" fill="#8295A0">CLASS</text>
+    <text x="366" y="250" class="mono" font-size="11" font-weight="700" fill="#F4EFE4" text-anchor="end">AI INFRA ARCHITECT</text>
+
+    <text x="22" y="276" class="mono" font-size="11" fill="#8295A0">SYSTEMS</text>
+    <g><rect x="149" y="267" width="19" height="9" rx="1" fill="#17A87A" stroke="none" stroke-width="0.8"/><rect x="171" y="267" width="19" height="9" rx="1" fill="#17A87A" stroke="none" stroke-width="0.8"/><rect x="193" y="267" width="19" height="9" rx="1" fill="#17A87A" stroke="none" stroke-width="0.8"/><rect x="215" y="267" width="19" height="9" rx="1" fill="#17A87A" stroke="none" stroke-width="0.8"/><rect x="237" y="267" width="19" height="9" rx="1" fill="#17A87A" stroke="none" stroke-width="0.8"/><rect x="259" y="267" width="19" height="9" rx="1" fill="#17A87A" stroke="none" stroke-width="0.8"/><rect x="281" y="267" width="19" height="9" rx="1" fill="#17A87A" stroke="none" stroke-width="0.8"/><rect x="303" y="267" width="19" height="9" rx="1" fill="#17A87A" stroke="none" stroke-width="0.8"/><rect x="325" y="267" width="19" height="9" rx="1" fill="#17A87A" stroke="none" stroke-width="0.8"/><rect x="347" y="267" width="19" height="9" rx="1" fill="#17A87A" stroke="none" stroke-width="0.8"/></g>
+
+    <text x="22" y="300" class="mono" font-size="11" fill="#8295A0">AGENTS</text>
+    <g><rect x="149" y="291" width="19" height="9" rx="1" fill="#2EE6A6" stroke="none" stroke-width="0.8"/><rect x="171" y="291" width="19" height="9" rx="1" fill="#2EE6A6" stroke="none" stroke-width="0.8"/><rect x="193" y="291" width="19" height="9" rx="1" fill="#2EE6A6" stroke="none" stroke-width="0.8"/><rect x="215" y="291" width="19" height="9" rx="1" fill="#2EE6A6" stroke="none" stroke-width="0.8"/><rect x="237" y="291" width="19" height="9" rx="1" fill="#2EE6A6" stroke="none" stroke-width="0.8"/><rect x="259" y="291" width="19" height="9" rx="1" fill="#2EE6A6" stroke="none" stroke-width="0.8"/><rect x="281" y="291" width="19" height="9" rx="1" fill="#2EE6A6" stroke="none" stroke-width="0.8"/><rect x="303" y="291" width="19" height="9" rx="1" fill="#2EE6A6" stroke="none" stroke-width="0.8"/><rect x="325" y="291" width="19" height="9" rx="1" fill="#2EE6A6" stroke="none" stroke-width="0.8"/><rect x="347" y="291" width="19" height="9" rx="1" fill="#2EE6A6" stroke="none" stroke-width="0.8"/></g>
+
+    <text x="22" y="324" class="mono" font-size="11" fill="#8295A0">RIGOR</text>
+    <g><rect x="149" y="315" width="19" height="9" rx="1" fill="#E8B84A" stroke="none" stroke-width="0.8"/><rect x="171" y="315" width="19" height="9" rx="1" fill="#E8B84A" stroke="none" stroke-width="0.8"/><rect x="193" y="315" width="19" height="9" rx="1" fill="#E8B84A" stroke="none" stroke-width="0.8"/><rect x="215" y="315" width="19" height="9" rx="1" fill="#E8B84A" stroke="none" stroke-width="0.8"/><rect x="237" y="315" width="19" height="9" rx="1" fill="#E8B84A" stroke="none" stroke-width="0.8"/><rect x="259" y="315" width="19" height="9" rx="1" fill="#E8B84A" stroke="none" stroke-width="0.8"/><rect x="281" y="315" width="19" height="9" rx="1" fill="#E8B84A" stroke="none" stroke-width="0.8"/><rect x="303" y="315" width="19" height="9" rx="1" fill="#E8B84A" stroke="none" stroke-width="0.8"/><rect x="325" y="315" width="19" height="9" rx="1" fill="#E8B84A" stroke="none" stroke-width="0.8"/><rect x="347" y="315" width="19" height="9" rx="1" fill="#E8B84A" stroke="none" stroke-width="0.8"/></g>
   </g>
 </svg>

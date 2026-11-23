@@ -1,128 +1,230 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" role="img" aria-labelledby="t d">
-  <title id="t">@hxp-tools world map</title>
-  <desc id="d">Arcade world select. Eight families: God, Proof, DNA, Audit, Voice, Ink, Brief, Arc. Fourteen packages across the map.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" role="img" aria-labelledby="t d">
+  <title id="t">@hxp-tools Overworld Map</title>
+  <desc id="d">Playable overworld campaign map for 14 @hxp-tools packages across 8 worlds: W7 Brief (pillars), W1 God (godpowers, godplans, goddesign, godaudits), W2 Proof (mythify), W3 DNA (codedna, docdna), W4 Audit (auditor-suite), W5 Voice (authenticity-check, humanizer, voiceprint), W8 Arc (ready-suite), and side campaign W6 Ink (scriveno).</desc>
   <style>
-    .sans{font-family:"Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif}
+    .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
     .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+    @keyframes flowFwd{from{stroke-dashoffset:28}to{stroke-dashoffset:0}}
+    @keyframes flowRev{from{stroke-dashoffset:0}to{stroke-dashoffset:28}}
+    @keyframes pulseRing{0%,100%{opacity:0.9}50%{opacity:0.3}}
+    .trail-fwd{stroke-dasharray:6 8;animation:flowFwd 1.4s linear infinite}
+    .trail-rev{stroke-dasharray:6 8;animation:flowRev 1.4s linear infinite}
+    .beacon{animation:pulseRing 2s ease-in-out infinite}
   </style>
   <defs>
-    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="1" fill="#1A2420"/>
+    <pattern id="mapGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#121C22" stroke-width="1"/>
+      <circle cx="0" cy="0" r="1.2" fill="#1D2D35"/>
     </pattern>
+    <radialGradient id="citadelGlow" cx="50%" cy="24%" r="32%">
+      <stop offset="0%" stop-color="#17A87A" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0A0E12" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="inkGlow" cx="80%" cy="84%" r="24%">
+      <stop offset="0%" stop-color="#D8B982" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0A0E12" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
-  <rect width="1200" height="720" fill="#0E1217"/>
-  <rect width="1200" height="720" fill="url(#dots)"/>
-  <rect x="0.5" y="0.5" width="1199" height="719" rx="10" fill="none" stroke="#24302A"/>
+  <!-- Map Canvas -->
+  <rect width="1200" height="780" rx="12" fill="#0A0E12"/>
+  <rect width="1200" height="780" rx="12" fill="url(#mapGrid)"/>
+  <rect width="1200" height="780" rx="12" fill="url(#citadelGlow)"/>
+  <rect width="1200" height="780" rx="12" fill="url(#inkGlow)"/>
 
-  <path d="M1 44H1199V11a10 10 0 0 0-10-10H11A10 10 0 0 0 1 11Z" fill="#151B18"/>
-  <line x1="1" y1="44" x2="1199" y2="44" stroke="#24302A"/>
-  <text x="32" y="28" class="mono" font-size="13" font-weight="700" fill="#E8B84A" letter-spacing="1.5">WORLD SELECT</text>
-  <text x="600" y="28" class="mono" font-size="13" font-weight="700" fill="#17A87A" text-anchor="middle" letter-spacing="1.5">8 FAMILIES / 14 PACKAGES</text>
-  <text x="1168" y="28" class="mono" font-size="13" fill="#7F8BA3" text-anchor="end" letter-spacing="1.5">@HXP-TOOLS</text>
+  <!-- Decorative subtle terrain contour rings -->
+  <ellipse cx="592" cy="182" rx="340" ry="126" fill="none" stroke="#162825" stroke-width="1" stroke-dasharray="4 6"/>
+  <ellipse cx="932" cy="634" rx="260" ry="102" fill="none" stroke="#262116" stroke-width="1" stroke-dasharray="3 6"/>
 
-  <!-- W1 GOD -->
-  <g transform="translate(28 68)">
-    <rect width="280" height="200" rx="8" fill="#12181A" stroke="#17A87A" stroke-width="2"/>
-    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W1</text>
-    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#17A87A" letter-spacing="2">GOD</text>
-    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Discipline stack</text>
-    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">godpowers</text>
-    <text x="16" y="106" class="mono" font-size="12" fill="#A8B0C0">godplans</text>
-    <text x="16" y="128" class="mono" font-size="12" fill="#A8B0C0">goddesign</text>
-    <text x="16" y="150" class="mono" font-size="12" fill="#A8B0C0">godaudits</text>
-    <text x="16" y="180" class="mono" font-size="11" fill="#7F8BA3">plan / design / build / audit</text>
+  <rect x="1" y="1" width="1198" height="778" rx="11" fill="none" stroke="#22323A" stroke-width="2"/>
+
+  <!-- Top HUD Bar -->
+  <path d="M2 46H1198V12a10 10 0 0 0-10-10H12A10 10 0 0 0 2 12Z" fill="#141D22"/>
+  <line x1="2" y1="46" x2="1198" y2="46" stroke="#22323A" stroke-width="1.5"/>
+  <rect x="24" y="13" width="84" height="20" rx="3" fill="#2A2312" stroke="#E8B84A" stroke-width="1.2"/>
+  <text x="66" y="27" class="mono" font-size="11" font-weight="700" fill="#E8B84A" text-anchor="middle" letter-spacing="1.2">OVERWORLD</text>
+  <text x="122" y="28" class="mono" font-size="12" font-weight="700" fill="#F4EFE4" letter-spacing="1.4">CAMPAIGN ROUTE // STEP 1 TO LAUNCH</text>
+  <text x="1176" y="28" class="mono" font-size="12" font-weight="700" fill="#17A87A" text-anchor="end" letter-spacing="1.4">8 WORLDS  /  14 PACKAGES</text>
+
+  <!-- Subtle Sector Coordinates -->
+  <text x="32" y="72" class="mono" font-size="10" fill="#526570" letter-spacing="1.5">SECTOR A // BRIEF, BUILD &amp; PROVE</text>
+  <text x="32" y="310" class="mono" font-size="10" fill="#526570" letter-spacing="1.5">SECTOR B // MATCH DNA, AUDIT &amp; VOICE</text>
+  <text x="32" y="540" class="mono" font-size="10" fill="#526570" letter-spacing="1.5">SECTOR C // LAUNCH</text>
+  <text x="696" y="540" class="mono" font-size="10" fill="#8F7A52" letter-spacing="1.5">SIDE CAMPAIGN // BOOKS, NOT CODEBASES</text>
+
+  <!-- ====================================================================== -->
+  <!-- ANIMATED OVERWORLD ROUTES (drawn beneath node boxes)                   -->
+  <!-- ====================================================================== -->
+  <!-- Base dark track lines -->
+  <g fill="none" stroke="#1C2E35" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Step 1 -> Step 2 -->
+    <path d="M308 182 H364"/>
+    <!-- Step 2 -> Step 3 -->
+    <path d="M820 182 H876"/>
+    <!-- Step 3 -> Step 4 (vertical switchback right) -->
+    <path d="M1022 276 V324"/>
+    <!-- Step 4 -> Step 5 (right to left) -->
+    <path d="M820 415 H764"/>
+    <!-- Step 5 -> Step 6 (right to left) -->
+    <path d="M436 415 H380"/>
+    <!-- Step 6 -> Step 7 (vertical switchback left) -->
+    <path d="M206 506 V554"/>
   </g>
 
-  <!-- W2 PROOF -->
-  <g transform="translate(324 68)">
-    <rect width="280" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
-    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W2</text>
-    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#3DF58A" letter-spacing="2">PROOF</text>
-    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Prove done</text>
-    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">mythify</text>
-    <text x="16" y="120" class="sans" font-size="13" fill="#7F8BA3">Plans close only on</text>
-    <text x="16" y="140" class="sans" font-size="13" fill="#7F8BA3">a real exit 0.</text>
-    <text x="16" y="180" class="mono" font-size="11" fill="#7F8BA3">zero deps / any model</text>
+  <!-- Animated glowing energy flow along the main run -->
+  <g fill="none" stroke="#2EE6A6" stroke-width="2.5" stroke-linecap="round">
+    <path d="M308 182 H364" class="trail-fwd"/>
+    <path d="M820 182 H876" class="trail-fwd"/>
+    <path d="M1022 276 V324" class="trail-fwd"/>
+    <path d="M820 415 H764" class="trail-fwd"/>
+    <path d="M436 415 H380" class="trail-fwd"/>
+    <path d="M206 506 V554" class="trail-fwd"/>
   </g>
 
-  <!-- W3 DNA -->
-  <g transform="translate(620 68)">
-    <rect width="280" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
-    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W3</text>
-    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#4CC9F0" letter-spacing="2">DNA</text>
-    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Author match</text>
-    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">codedna</text>
-    <text x="16" y="106" class="mono" font-size="12" fill="#A8B0C0">docdna</text>
-    <text x="16" y="140" class="sans" font-size="13" fill="#7F8BA3">Fingerprint code and</text>
-    <text x="16" y="160" class="sans" font-size="13" fill="#7F8BA3">docs the repo owes.</text>
+  <!-- Directional chevron arrowheads on paths -->
+  <polygon points="354,176 364,182 354,188" fill="#2EE6A6"/>
+  <polygon points="866,176 876,182 866,188" fill="#2EE6A6"/>
+  <polygon points="1016,314 1022,324 1028,314" fill="#2EE6A6"/>
+  <polygon points="774,409 764,415 774,421" fill="#2EE6A6"/>
+  <polygon points="390,409 380,415 390,421" fill="#2EE6A6"/>
+  <polygon points="200,544 206,554 212,544" fill="#2EE6A6"/>
+
+  <!-- Dashed warp link to Side Campaign W6 INK -->
+  <path d="M620 634 H696" fill="none" stroke="#8F7A52" stroke-width="2" stroke-dasharray="4 6"/>
+  <text x="658" y="624" class="mono" font-size="9" fill="#8F7A52" text-anchor="middle">WARP</text>
+
+  <!-- ====================================================================== -->
+  <!-- STEP 01: W7 BRIEF (Start Node)                                         -->
+  <!-- ====================================================================== -->
+  <g transform="translate(32 88)">
+    <path d="M10,0 H266 L276,10 V178 L266,188 H10 L0,178 V10 Z" fill="#10171C" stroke="#E8B84A" stroke-width="1.8"/>
+    <!-- Start flag pill -->
+    <rect x="16" y="14" width="66" height="20" rx="3" fill="#E8B84A"/>
+    <text x="49" y="28" class="mono" font-size="10" font-weight="800" fill="#0A0E12" text-anchor="middle" letter-spacing="1">01 START</text>
+    <text x="92" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="1.5">W7 · BRIEF</text>
+    <g transform="translate(236 14)"><rect x="2" y="2" width="20" height="20" rx="2" fill="none" stroke="#E8B84A" stroke-width="1.8"/><line x1="6" y1="8" x2="18" y2="8" stroke="#E8B84A" stroke-width="1.8"/><line x1="6" y1="13" x2="15" y2="13" stroke="#E8B84A" stroke-width="1.8"/><line x1="6" y1="18" x2="12" y2="18" stroke="#E8B84A" stroke-width="1.8"/></g>
+    <text x="16" y="62" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Stop the guessing</text>
+    <text x="16" y="84" class="sans" font-size="12.5" fill="#8295A0">Project briefings built on AGENTS.md.</text>
+    <rect x="16" y="104" width="244" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="16" y="104" width="3" height="23" rx="1" fill="#E8B84A"/><text x="27" y="119.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">pillars</text>
+    <text x="16" y="168" class="mono" font-size="10.5" fill="#526570">OPEN STANDARD // CONTEXT FIRST</text>
   </g>
 
-  <!-- W4 AUDIT -->
-  <g transform="translate(916 68)">
-    <rect width="256" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
-    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W4</text>
-    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#FF7A59" letter-spacing="2">AUDIT</text>
-    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Scored passes</text>
-    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">auditor-suite</text>
-    <text x="16" y="120" class="sans" font-size="13" fill="#7F8BA3">Eight read-only</text>
-    <text x="16" y="140" class="sans" font-size="13" fill="#7F8BA3">domain audits.</text>
-    <text x="16" y="180" class="mono" font-size="11" fill="#7F8BA3">reports agents can act on</text>
+  <!-- ====================================================================== -->
+  <!-- STEP 02: W1 GOD (Hero Citadel Node - 4 Packages)                       -->
+  <!-- ====================================================================== -->
+  <g transform="translate(364 88)">
+    <path d="M12,0 H444 L456,12 V176 L444,188 H12 L0,176 V12 Z" fill="#0E1C18" stroke="#2EE6A6" stroke-width="2.2"/>
+    <!-- Flagship beacon glow dot -->
+    <circle cx="436" cy="24" r="5" fill="#2EE6A6" class="beacon"/>
+    <rect x="16" y="14" width="76" height="20" rx="3" fill="#17A87A"/>
+    <text x="54" y="28" class="mono" font-size="10" font-weight="800" fill="#0A0E12" text-anchor="middle" letter-spacing="1">02 CITADEL</text>
+    <text x="102" y="28" class="mono" font-size="12" font-weight="700" fill="#2EE6A6" letter-spacing="1.5">W1 · GOD FAMILY</text>
+    <g transform="translate(398 12)"><path d="M2 19V7l5 4 5-7 5 7 5-4v12Z" fill="none" stroke="#2EE6A6" stroke-width="1.8" stroke-linejoin="miter"/><rect x="2" y="19" width="20" height="3" fill="#2EE6A6"/></g>
+    <text x="16" y="62" class="sans" font-size="19" font-weight="700" fill="#F4EFE4">Plan, design, hold state, audit</text>
+    <text x="16" y="84" class="sans" font-size="12.5" fill="#D7DFDF">Flagship discipline stack. Hook-enforced gates across every stage.</text>
+    <rect x="16" y="98" width="208" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="16" y="98" width="3" height="23" rx="1" fill="#2EE6A6"/><text x="27" y="113.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">godpowers</text>
+    <rect x="232" y="98" width="208" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="232" y="98" width="3" height="23" rx="1" fill="#2EE6A6"/><text x="243" y="113.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">godplans</text>
+    <rect x="16" y="126" width="208" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="16" y="126" width="3" height="23" rx="1" fill="#2EE6A6"/><text x="27" y="141.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">goddesign</text>
+    <rect x="232" y="126" width="208" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="232" y="126" width="3" height="23" rx="1" fill="#2EE6A6"/><text x="243" y="141.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">godaudits</text>
+    <text x="16" y="172" class="mono" font-size="10.5" fill="#17A87A">4 PACKAGES // 18 AUDIT DOMAINS // 437 CHECKS</text>
   </g>
 
-  <!-- W5 VOICE -->
-  <g transform="translate(28 292)">
-    <rect width="280" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
-    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W5</text>
-    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#F72585" letter-spacing="2">VOICE</text>
-    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Sound like you</text>
-    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">authenticity-check</text>
-    <text x="16" y="106" class="mono" font-size="12" fill="#A8B0C0">humanizer</text>
-    <text x="16" y="128" class="mono" font-size="12" fill="#A8B0C0">voiceprint</text>
-    <text x="16" y="168" class="sans" font-size="13" fill="#7F8BA3">Diagnose, clean, rewrite.</text>
-    <text x="16" y="188" class="mono" font-size="11" fill="#7F8BA3">never invent facts</text>
+  <!-- ====================================================================== -->
+  <!-- STEP 03: W2 PROOF (Gatekeeper Node)                                    -->
+  <!-- ====================================================================== -->
+  <g transform="translate(876 88)">
+    <path d="M10,0 H282 L292,10 V178 L282,188 H10 L0,178 V10 Z" fill="#10171C" stroke="#3DF58A" stroke-width="1.8"/>
+    <rect x="16" y="14" width="62" height="20" rx="3" fill="#102C1E" stroke="#3DF58A" stroke-width="1"/>
+    <text x="47" y="28" class="mono" font-size="10" font-weight="700" fill="#3DF58A" text-anchor="middle" letter-spacing="1">03 GATE</text>
+    <text x="88" y="28" class="mono" font-size="12" font-weight="700" fill="#3DF58A" letter-spacing="1.5">W2 · PROOF</text>
+    <g transform="translate(252 14)"><path d="M12 2L21 5.5V12c0 5-3.8 8.5-9 10-5.2-1.5-9-5-9-10V5.5Z" fill="none" stroke="#3DF58A" stroke-width="1.8"/><path d="M8 12l3 3 5.5-5.5" fill="none" stroke="#3DF58A" stroke-width="2"/></g>
+    <text x="16" y="62" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Prove done</text>
+    <text x="16" y="84" class="sans" font-size="12.5" fill="#8295A0">Exit 0 or it did not happen.</text>
+    <rect x="16" y="104" width="260" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="16" y="104" width="3" height="23" rx="1" fill="#3DF58A"/><text x="27" y="119.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">mythify</text>
+    <text x="16" y="168" class="mono" font-size="10.5" fill="#526570">ZERO DEPS // ANY MODEL // MCP + CLI</text>
   </g>
 
-  <!-- W6 INK -->
-  <g transform="translate(324 292)">
-    <rect width="280" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
-    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W6</text>
-    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#C4B59A" letter-spacing="2">INK</text>
-    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Blank to book</text>
-    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">scriveno</text>
-    <text x="16" y="120" class="sans" font-size="13" fill="#7F8BA3">Spec-driven writing,</text>
-    <text x="16" y="140" class="sans" font-size="13" fill="#7F8BA3">publishing, translation.</text>
-    <text x="16" y="180" class="mono" font-size="11" fill="#7F8BA3">creative agents pipeline</text>
+  <!-- ====================================================================== -->
+  <!-- STEP 04: W3 DNA (Mid-Right)                                            -->
+  <!-- ====================================================================== -->
+  <g transform="translate(820 324)">
+    <path d="M10,0 H338 L348,10 V172 L338,182 H10 L0,172 V10 Z" fill="#10171C" stroke="#4CC9F0" stroke-width="1.6"/>
+    <rect x="16" y="14" width="66" height="20" rx="3" fill="#0F232D" stroke="#4CC9F0" stroke-width="1"/>
+    <text x="49" y="28" class="mono" font-size="10" font-weight="700" fill="#4CC9F0" text-anchor="middle" letter-spacing="1">04 MATCH</text>
+    <text x="92" y="28" class="mono" font-size="12" font-weight="700" fill="#4CC9F0" letter-spacing="1.5">W3 · DNA FAMILY</text>
+    <g transform="translate(308 14)"><path d="M6 2c0 6 12 6 12 10s-12 4-12 10" fill="none" stroke="#4CC9F0" stroke-width="1.8"/><path d="M18 2c0 6-12 6-12 10s12 4 12 10" fill="none" stroke="#4CC9F0" stroke-width="1.8"/><line x1="7" y1="6" x2="17" y2="6" stroke="#4CC9F0" stroke-width="1.4"/><line x1="7" y1="18" x2="17" y2="18" stroke="#4CC9F0" stroke-width="1.4"/></g>
+    <text x="16" y="60" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Author fingerprint</text>
+    <text x="16" y="82" class="sans" font-size="12.5" fill="#8295A0">Match repo style and write docs code proves.</text>
+    <rect x="16" y="102" width="154" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="16" y="102" width="3" height="23" rx="1" fill="#4CC9F0"/><text x="27" y="117.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">codedna</text>
+    <rect x="178" y="102" width="154" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="178" y="102" width="3" height="23" rx="1" fill="#4CC9F0"/><text x="189" y="117.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">docdna</text>
+    <text x="16" y="164" class="mono" font-size="10.5" fill="#526570">2 PACKAGES // CODE + DOC CONVENTIONS</text>
   </g>
 
-  <!-- W7 BRIEF -->
-  <g transform="translate(620 292)">
-    <rect width="280" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
-    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W7</text>
-    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">BRIEF</text>
-    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Start with context</text>
-    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">pillars</text>
-    <text x="16" y="120" class="sans" font-size="13" fill="#7F8BA3">Open standard for</text>
-    <text x="16" y="140" class="sans" font-size="13" fill="#7F8BA3">project briefings.</text>
-    <text x="16" y="180" class="mono" font-size="11" fill="#7F8BA3">built on AGENTS.md</text>
+  <!-- ====================================================================== -->
+  <!-- STEP 05: W4 AUDIT (Mid-Center)                                         -->
+  <!-- ====================================================================== -->
+  <g transform="translate(436 324)">
+    <path d="M10,0 H318 L328,10 V172 L318,182 H10 L0,172 V10 Z" fill="#10171C" stroke="#FF7A59" stroke-width="1.6"/>
+    <rect x="16" y="14" width="66" height="20" rx="3" fill="#291914" stroke="#FF7A59" stroke-width="1"/>
+    <text x="49" y="28" class="mono" font-size="10" font-weight="700" fill="#FF7A59" text-anchor="middle" letter-spacing="1">05 SCAN</text>
+    <text x="92" y="28" class="mono" font-size="12" font-weight="700" fill="#FF7A59" letter-spacing="1.5">W4 · AUDIT</text>
+    <g transform="translate(288 14)"><circle cx="12" cy="12" r="9" fill="none" stroke="#FF7A59" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="#FF7A59" stroke-width="1.5"/><line x1="12" y1="1" x2="12" y2="6" stroke="#FF7A59" stroke-width="1.6"/><line x1="12" y1="18" x2="12" y2="23" stroke="#FF7A59" stroke-width="1.6"/><line x1="1" y1="12" x2="6" y2="12" stroke="#FF7A59" stroke-width="1.6"/><line x1="18" y1="12" x2="23" y2="12" stroke="#FF7A59" stroke-width="1.6"/></g>
+    <text x="16" y="60" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Scored passes</text>
+    <text x="16" y="82" class="sans" font-size="12.5" fill="#8295A0">Eight read-only domain audits agents act on.</text>
+    <rect x="16" y="102" width="296" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="16" y="102" width="3" height="23" rx="1" fill="#FF7A59"/><text x="27" y="117.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">auditor-suite</text>
+    <text x="16" y="164" class="mono" font-size="10.5" fill="#526570">READ-ONLY // PRIORITIZED REPORTS</text>
   </g>
 
-  <!-- W8 ARC -->
-  <g transform="translate(916 292)">
-    <rect width="256" height="200" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
-    <text x="16" y="28" class="mono" font-size="12" font-weight="700" fill="#E8B84A" letter-spacing="2">W8</text>
-    <text x="48" y="28" class="mono" font-size="12" font-weight="700" fill="#8C86B8" letter-spacing="2">ARC</text>
-    <text x="16" y="54" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Idea to launch</text>
-    <text x="16" y="84" class="mono" font-size="12" fill="#A8B0C0">ready-suite</text>
-    <text x="16" y="120" class="sans" font-size="13" fill="#7F8BA3">Eleven composable</text>
-    <text x="16" y="140" class="sans" font-size="13" fill="#7F8BA3">skills, one arc.</text>
-    <text x="16" y="180" class="mono" font-size="11" fill="#7F8BA3">artifacts are the contract</text>
+  <!-- ====================================================================== -->
+  <!-- STEP 06: W5 VOICE (Mid-Left)                                           -->
+  <!-- ====================================================================== -->
+  <g transform="translate(32 324)">
+    <path d="M10,0 H338 L348,10 V172 L338,182 H10 L0,172 V10 Z" fill="#10171C" stroke="#F45B93" stroke-width="1.6"/>
+    <rect x="16" y="14" width="66" height="20" rx="3" fill="#2A1420" stroke="#F45B93" stroke-width="1"/>
+    <text x="49" y="28" class="mono" font-size="10" font-weight="700" fill="#F45B93" text-anchor="middle" letter-spacing="1">06 VOICE</text>
+    <text x="92" y="28" class="mono" font-size="12" font-weight="700" fill="#F45B93" letter-spacing="1.5">W5 · VOICE FAMILY</text>
+    <g transform="translate(308 14)"><rect x="2" y="10" width="3" height="6" fill="#F45B93"/><rect x="7" y="5" width="3" height="16" fill="#F45B93"/><rect x="12" y="2" width="3" height="20" fill="#F45B93"/><rect x="17" y="7" width="3" height="12" fill="#F45B93"/><rect x="21" y="11" width="2" height="4" fill="#F45B93"/></g>
+    <text x="16" y="60" class="sans" font-size="18" font-weight="700" fill="#F4EFE4">Sound like you</text>
+    <text x="16" y="82" class="sans" font-size="12.5" fill="#8295A0">Flag tells, strip slop, rewrite once. Zero invented facts.</text>
+    <rect x="16" y="94" width="154" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="16" y="94" width="3" height="23" rx="1" fill="#F45B93"/><text x="27" y="109.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">authenticity-check</text>
+    <rect x="178" y="94" width="154" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="178" y="94" width="3" height="23" rx="1" fill="#F45B93"/><text x="189" y="109.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">humanizer</text>
+    <rect x="16" y="122" width="154" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="16" y="122" width="3" height="23" rx="1" fill="#F45B93"/><text x="27" y="137.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">voiceprint</text>
+    <text x="16" y="168" class="mono" font-size="10.5" fill="#526570">3 PACKAGES // DIAGNOSE + CLEAN + REWRITE</text>
   </g>
 
-  <!-- Footer status bar -->
-  <rect x="28" y="520" width="1144" height="168" rx="8" fill="#12181A" stroke="#2A3A34" stroke-width="2"/>
-  <text x="52" y="556" class="mono" font-size="13" font-weight="700" fill="#E8B84A" letter-spacing="2">HOW TO PLAY</text>
-  <text x="52" y="590" class="sans" font-size="16" fill="#E8E2D6">1. Brief the agent (Pillars)  2. Plan and lock design (God)  3. Prove every claim (Mythify)</text>
-  <text x="52" y="620" class="sans" font-size="16" fill="#A8B0C0">4. Match the author's DNA  5. Audit what shipped  6. Keep the voice human  7. Launch the arc</text>
-  <text x="52" y="658" class="mono" font-size="13" font-weight="700" fill="#17A87A" letter-spacing="1">npx @hxp-tools/&lt;package&gt;   ·   github.com/hannsxpeter   ·   npmjs.com/org/hxp-tools</text>
+  <!-- ====================================================================== -->
+  <!-- STEP 07: W8 ARC (Bottom-Left Launchpad)                                -->
+  <!-- ====================================================================== -->
+  <g transform="translate(32 554)">
+    <path d="M12,0 H576 L588,12 V148 L576,160 H12 L0,148 V12 Z" fill="#131624" stroke="#9B8CFF" stroke-width="2"/>
+    <rect x="18" y="16" width="84" height="20" rx="3" fill="#9B8CFF"/>
+    <text x="60" y="30" class="mono" font-size="10" font-weight="800" fill="#0A0E12" text-anchor="middle" letter-spacing="1">07 LAUNCH</text>
+    <text x="114" y="30" class="mono" font-size="12" font-weight="700" fill="#B6ACFF" letter-spacing="1.5">W8 · ARC  //  FINAL STAGE</text>
+    <g transform="translate(546 14)"><path d="M3 20C5 10 11 5 21 4" fill="none" stroke="#B6ACFF" stroke-width="2"/><path d="M15 4h6v6" fill="none" stroke="#B6ACFF" stroke-width="2"/><circle cx="4" cy="19" r="2.5" fill="#B6ACFF"/></g>
+    <text x="18" y="66" class="sans" font-size="19" font-weight="700" fill="#F4EFE4">Idea to launch in one composable arc</text>
+    <text x="18" y="90" class="sans" font-size="13" fill="#D7DFDF">Eleven composable skills from kickoff to production. Artifacts are the contract.</text>
+    <rect x="18" y="108" width="240" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="18" y="108" width="3" height="23" rx="1" fill="#9B8CFF"/><text x="29" y="123.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">ready-suite</text>
+    <text x="276" y="125" class="mono" font-size="11.5" font-weight="700" fill="#B6ACFF">$ npx @hxp-tools/ready-suite</text>
+  </g>
+
+  <!-- ====================================================================== -->
+  <!-- SIDE CAMPAIGN ISLAND: W6 INK (Bottom-Right)                            -->
+  <!-- ====================================================================== -->
+  <g transform="translate(696 554)">
+    <path d="M12,0 H460 L472,12 V148 L460,160 H12 L0,148 V12 Z" fill="#181611" stroke="#D8B982" stroke-width="1.8" stroke-dasharray="6 3"/>
+    <rect x="18" y="16" width="96" height="20" rx="3" fill="#2C2416" stroke="#D8B982" stroke-width="1"/>
+    <text x="66" y="30" class="mono" font-size="10" font-weight="700" fill="#D8B982" text-anchor="middle" letter-spacing="1">SIDE QUEST</text>
+    <text x="126" y="30" class="mono" font-size="12" font-weight="700" fill="#D8B982" letter-spacing="1.5">W6 · INK</text>
+    <g transform="translate(430 14)"><path d="M2 5h8a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H2Z" fill="none" stroke="#D8B982" stroke-width="1.8"/><path d="M22 5h-8a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h8Z" fill="none" stroke="#D8B982" stroke-width="1.8"/></g>
+    <text x="18" y="66" class="sans" font-size="19" font-weight="700" fill="#F4EFE4">Blank page to published book</text>
+    <text x="18" y="90" class="sans" font-size="13" fill="#C4B9A5">Spec-driven creative writing, publishing, and translation.</text>
+    <rect x="18" y="108" width="190" height="23" rx="3" fill="#0B1116" stroke="#2E454D" stroke-width="1"/><rect x="18" y="108" width="3" height="23" rx="1" fill="#D8B982"/><text x="29" y="123.5" class="mono" font-size="11" font-weight="600" fill="#D7DFDF">scriveno</text>
+    <text x="226" y="125" class="mono" font-size="11.5" font-weight="700" fill="#D8B982">$ npx @hxp-tools/scriveno</text>
+  </g>
+
+  <!-- Bottom Legend Footer Strip -->
+  <line x1="24" y1="736" x2="1176" y2="736" stroke="#22323A" stroke-width="1"/>
+  <circle cx="38" cy="757" r="4" fill="#2EE6A6"/>
+  <text x="50" y="761" class="mono" font-size="11" fill="#8295A0">MAIN RUN: 01 BRIEF -> 02 GOD -> 03 PROOF -> 04 DNA -> 05 AUDIT -> 06 VOICE -> 07 LAUNCH</text>
+  <text x="1176" y="761" class="mono" font-size="11" font-weight="700" fill="#17A87A" text-anchor="end">RUN ANY PACKAGE: npx @hxp-tools/&lt;pkg&gt;</text>
 </svg>
